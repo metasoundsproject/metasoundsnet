@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-bold mb-4">Metasounds</h3>
+            <h3 className="text-3xl font-bold mb-4">MetaSounds</h3>
             <p className="text-white/60 max-w-md mb-8">
               Redefining music creation through innovative technology. 
               Smart instruments, gaming peripherals, and professional audio equipment.
@@ -112,11 +112,11 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-6">
               <span className="font-mono text-xs text-white/30">
-                Red LABO
+                RED LABO
               </span>
               <span className="w-1 h-1 bg-white/30 rounded-full" />
               <span className="font-mono text-xs text-white/30">
-                Bit Vibe
+                BitVibe
               </span>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Footer() {
       {/* Large Background Text */}
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none">
         <div className="text-[20vw] font-bold text-white/[0.02] leading-none text-center translate-y-1/3">
-          METASOUNDS
+          MetaSounds
         </div>
       </div>
     </footer>
