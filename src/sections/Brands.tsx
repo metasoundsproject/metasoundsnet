@@ -149,7 +149,7 @@ export default function Brands() {
           <div className="order-1 lg:order-2 relative">
             <div className="aspect-square bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl overflow-hidden">
               <img
-                src="/bitvibe-midi.jpg"
+                src="./bitvibe-midi.jpg"
                 alt="Bit Vibe MIDI"
                 className="w-full h-full object-cover"
               />
