@@ -15,19 +15,19 @@ interface ProductInfo {
 const products = [
   {
     id: 'oto',
-    image: '/oto-synthesizer.jpg',
+    image: './oto-synthesizer.jpg',
     color: 'from-red-500/20 to-transparent',
     accent: 'bg-red-500',
   },
   {
     id: 'midi',
-    image: '/bitvibe-midi.jpg',
+    image: './bitvibe-midi.jpg',
     color: 'from-blue-500/20 to-transparent',
     accent: 'bg-blue-500',
   },
   {
     id: 'dj',
-    image: '/bitvibe-dj.jpg',
+    image: './bitvibe-dj.jpg',
     color: 'from-purple-500/20 to-transparent',
     accent: 'bg-purple-500',
   },
