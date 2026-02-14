@@ -69,7 +69,7 @@ export default function Brands() {
           </h2>
         </div>
 
-        {/* Red LABO */}
+        {/* RED LABO */}
         <div
           ref={redLaboRef}
           className="grid lg:grid-cols-2 gap-12 items-center mb-32"
@@ -78,8 +78,8 @@ export default function Brands() {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden">
               <img
-                src="/oto-synthesizer.jpg"
-                alt="Red LABO OTO"
+                src="./oto-synthesizer.jpg"
+                alt="RED LABO OTO"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -102,7 +102,7 @@ export default function Brands() {
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
-                Synthesizers
+                Synthesizer
               </span>
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
                 Interactive
@@ -114,7 +114,7 @@ export default function Brands() {
           </div>
         </div>
 
-        {/* Bit Vibe */}
+        {/* BitVibe */}
         <div
           ref={bitVibeRef}
           className="grid lg:grid-cols-2 gap-12 items-center"
@@ -135,7 +135,7 @@ export default function Brands() {
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
-                MIDI Controllers
+                MIDI Controller
               </span>
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
                 DJ Equipment
@@ -150,7 +150,7 @@ export default function Brands() {
             <div className="aspect-square bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl overflow-hidden">
               <img
                 src="./bitvibe-midi.jpg"
-                alt="Bit Vibe MIDI"
+                alt="BitVibe MIDI"
                 className="w-full h-full object-cover"
               />
             </div>
