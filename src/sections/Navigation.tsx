@@ -46,7 +46,7 @@ export default function Navigation() {
             onClick={() => scrollToSection('hero')}
             className="text-lg font-bold tracking-tight hover:opacity-70 transition-opacity"
           >
-            Metasounds
+            MetaSounds
           </button>
 
           {/* Desktop Links */}
