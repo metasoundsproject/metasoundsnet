@@ -64,10 +64,10 @@ export default function Navigation() {
               {t.nav.about}
             </button>
             <button
-              onClick={() => scrollToSection('philosophy')}
+              onClick={() => scrollToSection('footer')}
               className="text-sm font-medium link-underline opacity-70 hover:opacity-100 transition-opacity"
             >
-              {t.nav.philosophy}
+              {t.nav.support}
             </button>
           </div>
 
@@ -130,10 +130,10 @@ export default function Navigation() {
             {t.nav.about}
           </button>
           <button
-            onClick={() => scrollToSection('philosophy')}
+            onClick={() => scrollToSection('footer')}
             className="text-2xl font-medium"
           >
-            {t.nav.philosophy}
+            {t.nav.support}
           </button>
         </div>
       )}
