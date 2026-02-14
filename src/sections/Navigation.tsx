@@ -130,10 +130,10 @@ export default function Navigation() {
             {t.nav.about}
           </button>
           <button
-            onClick={() => scrollToSection('footer')}
+            onClick={() => scrollToSection('philosophy')}
             className="text-2xl font-medium"
           >
-            {t.nav.support}
+            {t.nav.philosophy}
           </button>
         </div>
       )}
