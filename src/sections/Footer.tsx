@@ -115,7 +115,7 @@ export default function Footer() {
               <a
                 href="https://www.redlabo.com"
                 className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
-                target="_blank"  // 可选：在新标签页打开链接
+                target="_blank"  
               >
                 RED LABO
               </a>
@@ -125,7 +125,7 @@ export default function Footer() {
               <a
                 href="https://www.bitvibe.jp"
                 className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
-                target="_blank"  // 可选：在新标签页打开链接
+                target="_blank"  
               >
                 BitVibe
               </a>
