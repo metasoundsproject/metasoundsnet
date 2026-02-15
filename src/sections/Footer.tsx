@@ -72,11 +72,7 @@ export default function Footer() {
                   {t.nav.about}
                 </a>
               </li>
-              <li>
-                <a href="#footer" className="text-white/70 hover:text-white transition-colors link-underline">
-                  {t.nav.support}
-                </a>
-              </li>
+             
               <li>
                 <a href="/story.html" className="text-white/70 hover:text-white transition-colors link-underline">
                   Company History
