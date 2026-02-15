@@ -99,8 +99,10 @@ gsap.to('.subtitle-shimmer', {
         </h2>
         
         <p
-  className="philosophy-text subtitle-shimmer text-xl lg:text-2xl text-black/60 font-light max-w-2xl mx-auto relative overflow-hidden"
-  <style>{`
+  className="philosophy-text subtitle-shimmer text-xl lg:text-2xl text-black/60 font-light max-w-2xl mx-auto relative overflow-hidden" 
+>
+
+ <style>{`
   @keyframes slide-down {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(200%); }
@@ -133,7 +135,8 @@ gsap.to('.subtitle-shimmer', {
     opacity: 0.6;
   }
 `}</style>
->
+
+
   <span className="relative z-10">
     {t.philosophy.subtitle}
   </span>
