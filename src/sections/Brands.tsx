@@ -75,19 +75,7 @@ export default function Brands() {
           className="grid lg:grid-cols-2 gap-12 items-center mb-32"
           style={{ opacity: 0 }}
         >
-            {/* Background Grid */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, #000 1px, transparent 1px),
-              linear-gradient(to bottom, #000 1px, transparent 1px)
-            `,
-            backgroundSize: '60px 60px',
-          }}
-        />
-      </div>
+          
 
           
           <div className="relative">
