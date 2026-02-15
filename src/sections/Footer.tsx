@@ -39,7 +39,7 @@ export default function Footer() {
                 target="_blank"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
-                <Tiktok className="w-5 h-5" />
+                <Youtube className="w-5 h-5" />
               </a>
               <a
                 href="https://www.tiktok.com/"
