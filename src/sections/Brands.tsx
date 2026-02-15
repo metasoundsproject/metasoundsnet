@@ -78,7 +78,7 @@ export default function Brands() {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden">
               <img
-                src="./oto-synthesizer.jpg"
+                src="./redlabologo.png"
                 alt="RED LABO OTO"
                 className="w-full h-full object-cover"
               />
