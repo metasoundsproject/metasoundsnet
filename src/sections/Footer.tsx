@@ -15,8 +15,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <h3 className="text-3xl font-bold mb-4">Support</h3>
-            <p className="text-white/60 max-w-md mb-8">One-year warranty · 30-day returns · Free worldwide shipping</p>
-             <p className="text-white/50 max-w-md mb-8">Redefining art creation through innovative technology. 
+            <p className="text-white/80 max-w-md mb-8">One-year warranty · 30-day returns · Free worldwide shipping</p>
+             <p className="text-white/60 max-w-md mb-8">Redefining art creation through innovative technology. 
               Smart instruments, professional audio equipment, and PC/gaming peripherals.
             </p>
             <div className="flex items-center gap-4">
