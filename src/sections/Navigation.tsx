@@ -52,7 +52,7 @@ export default function Navigation() {
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-6">
             <button
-              onClick={() => scrollToSection('products')}
+              onClick={() => scrollToSection('hero')}
               className="text-sm font-medium link-underline opacity-70 hover:opacity-100 transition-opacity"
             >
               {t.nav.products}
