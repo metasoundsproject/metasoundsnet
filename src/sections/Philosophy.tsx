@@ -113,39 +113,47 @@ gsap.to('.subtitle-shimmer', {
   <span className="shimmer-light absolute inset-0 pointer-events-none" />
 </p>
 
- <style>{`
+<style>{`
   @keyframes slide-down {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(200%); }
   }
 
-  /* shimmer animation */
+  /* 流光动画 */
   @keyframes shimmer {
-    0% { transform: translateX(-120%); }
-    100% { transform: translateX(120%); }
+    0% { transform: translateX(-150%) skewX(-20deg); }
+    100% { transform: translateX(150%) skewX(-20deg); }
   }
 
   .subtitle-shimmer {
     position: relative;
+    display: inline-block;
+    overflow: hidden;
   }
 
   .shimmer-light {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(
       110deg,
       transparent 0%,
-      rgba(255,255,255,0.6) 50%,
+      rgba(255, 255, 255, 0.8) 50%,
       transparent 100%
     );
     mix-blend-mode: overlay;
-    opacity: 0.25;
+    opacity: 0.3;
     animation: shimmer 4s linear infinite;
-    filter: blur(8px);
+    filter: blur(6px);
+    pointer-events: none;
   }
 
   .subtitle-shimmer:hover .shimmer-light {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 `}</style>
+
 
         {/* Decorative Elements */}
         <div className="philosophy-text mt-16 flex items-center justify-center gap-4" style={{ opacity: 0 }}>
