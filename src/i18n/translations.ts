@@ -15,14 +15,14 @@ export const translations = {
     },
     brands: {
       redLabo: {
-        name: 'Red LABO',
+        name: 'RED LABO',
         tagline: 'Flagship Innovation',
-        description: 'Red LABO represents our commitment to pushing the boundaries of musical instruments. The OTO synthesizer combines cutting-edge technology with intuitive design.',
+        description: 'RED LABO represents our commitment to pushing the boundaries of musical instruments. The OTO synthesizer combines cutting-edge technology with intuitive design.',
       },
       bitVibe: {
-        name: 'Bit Vibe',
+        name: 'BitVibe',
         tagline: 'Creative Tools',
-        description: 'Bit Vibe delivers professional-grade MIDI controllers and DJ equipment for creators who demand precision and portability.',
+        description: 'BitVibe delivers professional-grade MIDI controllers and DJ equipment for creators who demand precision and portability.',
       },
     },
     products: {
@@ -33,12 +33,12 @@ export const translations = {
         description: 'Smart audio-visual interactive synthesizer with touch-sensitive controls.',
       },
       midi: {
-        name: 'Bit Vibe MIDI',
+        name: 'BitVibe MIDI',
         category: 'MIDI Controller',
         description: 'Compact MIDI keyboard with RGB backlit keys and intuitive controls.',
       },
       dj: {
-        name: 'Bit Vibe Scratch',
+        name: 'BitVibe Scratch',
         category: 'DJ Controller',
         description: 'Portable scratch controller with responsive jog wheel and performance pads.',
       },
@@ -54,7 +54,7 @@ export const translations = {
       address: 'Tokyo, Japan',
       links: 'Links',
       follow: 'Follow Us',
-      copyright: '© 2024 Metasounds. All rights reserved.',
+      copyright: '© 2024 MetaSounds. All rights reserved.',
     },
   },
   zh: {
@@ -71,14 +71,14 @@ export const translations = {
     },
     brands: {
       redLabo: {
-        name: 'Red LABO',
+        name: 'RED LABO',
         tagline: '旗舰创新',
-        description: 'Red LABO 代表着我们对推动乐器边界的承诺。OTO 合成器将尖端技术与直观设计相结合。',
+        description: 'RED LABO 代表着我们对推动乐器边界的承诺。OTO 合成器将尖端技术与直观设计相结合。',
       },
       bitVibe: {
-        name: 'Bit Vibe',
+        name: 'BitVibe',
         tagline: '创意工具',
-        description: 'Bit Vibe 为追求精准和便携的创作者提供专业级 MIDI 控制器和 DJ 设备。',
+        description: 'BitVibe 为追求精准和便携的创作者提供专业级 MIDI 控制器和 DJ 设备。',
       },
     },
     products: {
@@ -89,12 +89,12 @@ export const translations = {
         description: '智能音画互动合成器，配备触摸感应控制。',
       },
       midi: {
-        name: 'Bit Vibe MIDI',
+        name: 'BitVibe MIDI',
         category: 'MIDI 控制器',
         description: '紧凑型 MIDI 键盘，配有 RGB 背光按键和直观控制。',
       },
       dj: {
-        name: 'Bit Vibe Scratch',
+        name: 'BitVibe Scratch',
         category: 'DJ 控制器',
         description: '便携式搓碟控制器，配有响应式转盘和表演垫。',
       },
@@ -110,7 +110,7 @@ export const translations = {
       address: '日本东京',
       links: '链接',
       follow: '关注我们',
-      copyright: '© 2024 Metasounds. 保留所有权利。',
+      copyright: '© 2024 MetaSounds. 保留所有权利。',
     },
   },
   ja: {
@@ -145,7 +145,7 @@ export const translations = {
         description: 'タッチセンシティブコントロールを備えたスマートな音視覚インタラクティブシンセサイザー。',
       },
       midi: {
-        name: 'Bit Vibe MIDI',
+        name: 'BitVibe MIDI',
         category: 'MIDI コントローラー',
         description: 'RGB バックライトキーと直感的なコントロールを備えたコンパクト MIDI キーボード。',
       },
@@ -166,7 +166,7 @@ export const translations = {
       address: '東京都',
       links: 'リンク',
       follow: 'フォローする',
-      copyright: '© 2024 Metasounds. All rights reserved.',
+      copyright: '© 2024 MetaSounds. All rights reserved.',
     },
   },
   ko: {
@@ -183,14 +183,14 @@ export const translations = {
     },
     brands: {
       redLabo: {
-        name: 'Red LABO',
+        name: 'RED LABO',
         tagline: '플래그십 혁신',
-        description: 'Red LABO는 악기의 경계를 넓히려는 우리의 약속을 대표합니다. OTO 신시사이저는 최첨단 기술과 직관적인 디자인을 결합합니다.',
+        description: 'RED LABO는 악기의 경계를 넓히려는 우리의 약속을 대표합니다. OTO 신시사이저는 최첨단 기술과 직관적인 디자인을 결합합니다.',
       },
       bitVibe: {
-        name: 'Bit Vibe',
+        name: 'BitVibe',
         tagline: '크리에이티브 도구',
-        description: 'Bit Vibe는 정밀성과 휴대성을 요구하는 크리에이터를 위해 전문가급 MIDI 컨트롤러와 DJ 장비를 제공합니다.',
+        description: 'BitVibe는 정밀성과 휴대성을 요구하는 크리에이터를 위해 전문가급 MIDI 컨트롤러와 DJ 장비를 제공합니다.',
       },
     },
     products: {
@@ -201,12 +201,12 @@ export const translations = {
         description: '터치 감응 컨트롤이 있는 스마트 오디오-비주얼 인터랙티브 신시사이저.',
       },
       midi: {
-        name: 'Bit Vibe MIDI',
+        name: 'BitVibe MIDI',
         category: 'MIDI 컨트롤러',
         description: 'RGB 백라이트 키와 직관적인 컨트롤이 있는 컴팩트 MIDI 키보드.',
       },
       dj: {
-        name: 'Bit Vibe Scratch',
+        name: 'BitVibe Scratch',
         category: 'DJ 컨트롤러',
         description: '반응형 조그휠과 퍼포먼스 패드가 있는 휴대용 스크래치 컨트롤러.',
       },
@@ -222,7 +222,7 @@ export const translations = {
       address: '도쿄, 일본',
       links: '링크',
       follow: '팔로우',
-      copyright: '© 2024 Metasounds. All rights reserved.',
+      copyright: '© 2024 MetaSounds. All rights reserved.',
     },
   },
 };
