@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Philosophy() {
-  <section id="philosophy">
+  
   const { t } = useLanguage();
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -53,7 +53,7 @@ export default function Philosophy() {
   }, []);
 
   return (
-    <section
+    <section id="philosophy"
       ref={sectionRef}
       className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden"
     >
