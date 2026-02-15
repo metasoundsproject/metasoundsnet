@@ -43,7 +43,7 @@ export default function Navigation() {
         <div className="flex items-center gap-8">
           {/* Logo */}
           <button
-            onClick={() => scrollToSection('philosophy')}
+            onClick={() => scrollToSection('hero')}
             className="text-lg font-bold tracking-tight hover:opacity-70 transition-opacity"
           >
             MetaSounds
