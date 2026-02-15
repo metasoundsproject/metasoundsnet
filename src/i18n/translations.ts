@@ -173,24 +173,24 @@ export const translations = {
     nav: {
       products: '제품',
       about: '회사 소개',
-      support: '고객 지원 서비스',
+      support: '지원',
     },
     hero: {
       title: 'OTO',
       subtitle: 'AI 기반 오디오-비주얼 인터랙티브 신시사이저',
-      description: 'OTO로 창의적 표현을 재정의하세요. AI, 터치, 모션이 융합되어 음악과 비주얼 창작의 경계를 넘어선 몰입형 오디오-비주얼 경험을 선사합니다.',
+      description: 'OTO는 창의적 표현을 새롭게 정의합니다. AI, 사운드, 모션이 결합되어 음악과 비주얼 창작의 경계를 확장하는 몰입형 오디오-비주얼 경험을 제공합니다.',
       cta: 'OTO 탐색하기',
     },
     brands: {
       redLabo: {
         name: 'RED LABO®',
         tagline: '크리에이티브 테크의 미래',
-        description: 'RED LABO®는 혁신 허브로서 AI 통합형 오디오-비주얼 인터랙티브 제품 개발을 선도하며, 기술과 창의적 표현의 관계를 재구상합니다. 모든 RED LABO 제품은 사운드, 비전, 인공지능의 경계를 허물도록 설계되었습니다.',
+        description: 'RED LABO®는 AI 통합 오디오-비주얼 인터랙티브 제품을 선도적으로 개발하는 실험적 혁신 허브입니다. 기술과 창의적 표현의 관계를 재구성하며, 모든 RED LABO 제품은 사운드, 비주얼, 인공지능의 경계를 허물도록 설계되었습니다.',
       },
       bitVibe: {
         name: 'BitVibe®',
         tagline: '핵심 프로 기어',
-        description: 'BitVibe®는 업계 검증된 정교한 오디오 주변기기를 제공하며, 신뢰성과 성능을 모두 갖추고 있습니다. 스튜디오급 스피커, MIDI 키보드부터 전문 DJ 장비까지, BitVibe는 정밀성과 접근성을 결합한 도구로 크리에이터를 역량 강화시킵니다.',
+        description: 'BitVibe®는 신뢰성과 고성능을 갖춘 프로페셔널 오디오 및 PC/게이밍 주변기기를 제공합니다. 스튜디오급 스피커와 MIDI 키보드부터 다양한 전자 장비까지, 정밀성과 사용 편의성을 결합한 도구로 크리에이터를 지원합니다.',
       },
     },
     products: {
@@ -198,17 +198,17 @@ export const translations = {
       oto: {
         name: 'OTO',
         category: 'AI 신시사이저',
-        description: '플래그십 AI 기반 오디오-비주얼 인터랙티브 신시사이저로, 적응형 터치 감응 컨트롤과 실시간 비주얼 피드백 기능을 탑재합니다.',
+        description: '압력 감지 애프터터치와 실시간 비주얼 피드백을 갖춘 플래그십 AI 기반 오디오-비주얼 인터랙티브 신시사이저.',
       },
       midi: {
         name: 'MIDI Pro',
         category: 'MIDI 컨트롤러',
-        description: '프로페셔널 컴팩트 MIDI 키보드로, RGB 백라이트 키, 맞춤형 컨트롤, 플러그 앤 플레이 기능을 제공합니다.',
+        description: 'DJ 스타일 스크래치 컨트롤러를 탑재한 플러그 앤 플레이 지원 프로페셔널 컴팩트 MIDI 키보드.',
       },
       sound: {
-        name: '사운드 시스템',
+        name: '인터랙티브 디자인',
         category: '디자인 솔루션',
-        description: '프로페셔널 솔루션은 최첨단 엔지니어링과 세련된 미학을 결합하여, 사운드와 비주얼 창의성에 선명도와 파워를 더합니다.',
+        description: '최첨단 엔지니어링과 세련된 디자인을 결합해 사운드와 비주얼 창작에 선명함과 힘을 더합니다.',
       },
     },
     philosophy: {
