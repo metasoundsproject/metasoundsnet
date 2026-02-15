@@ -15,14 +15,14 @@ export const translations = {
     },
     brands: {
       redLabo: {
-        name: 'RED LABO',
+        name: 'RED LABO&reg',
         tagline: 'Future of Creative Tech',
-        description: 'RED LABO is the innovation hub pioneering AI-integrated audio-visual interactive products that reimagine the relationship between technology and creative expression. Every RED LABO creation is engineered to blur the lines between sound, vision, and artificial intelligence.',
+        description: 'RED LABO&reg is the innovation hub pioneering AI-integrated audio-visual interactive products that reimagine the relationship between technology and creative expression. Every RED LABO creation is engineered to blur the lines between sound, vision, and artificial intelligence.',
       },
       bitVibe: {
-        name: 'BitVibe',
+        name: 'BitVibe&reg',
         tagline: 'Essential Pro Gear',
-        description: 'BitVibe delivers refined, industry-proven audio peripherals designed for reliability and performance. From studio-grade speakers and MIDI keyboards to professional DJ gear, BitVibe empowers creators with tools that combine precision and accessibility.',
+        description: 'BitVibe&reg delivers refined, industry-proven audio peripherals designed for reliability and performance. From studio-grade speakers and MIDI keyboards to professional DJ gear, BitVibe empowers creators with tools that combine precision and accessibility.',
       },
     },
     products: {
@@ -71,14 +71,14 @@ export const translations = {
     },
     brands: {
       redLabo: {
-        name: 'RED LABO',
+        name: 'RED LABO&reg',
         tagline: '创意科技的未来',
-        description: 'RED LABO 专注研发融合 AI 的音视交互产品，重新构想科技与创意表达的关系。每一款 RED LABO 产品都致力于打破声音、视觉与人工智能的边界。',
+        description: 'RED LABO&reg 专注研发融合 AI 的音视交互产品，重新构想科技与创意表达的关系。每一款 RED LABO 产品都致力于打破声音、视觉与人工智能的边界。',
       },
       bitVibe: {
-        name: 'BitVibe',
+        name: 'BitVibe&reg',
         tagline: '专业级核心装备',
-        description: 'BitVibe 专注打造成熟可靠、性能卓越的音频外设。从专业级监听音箱、MIDI 键盘到 DJ 专业设备，BitVibe 以精准与易用兼具的工具赋能创作者。',
+        description: 'BitVibe&reg 专注打造成熟可靠、性能卓越的音频外设。从专业级监听音箱、MIDI 键盘到 DJ 专业设备，BitVibe 以精准与易用兼具的工具赋能创作者。',
       },
     },
     products: {
@@ -127,14 +127,14 @@ export const translations = {
     },
     brands: {
       redLabo: {
-        name: 'RED LABO',
+        name: 'RED LABO&reg',
         tagline: 'クリエイティブテックの未来',
-        description: 'RED LABOはイノベーション拠点であり、AI統合型音響映像インタラクティブ製品を開発し、テクノロジーと創造的表現の関係性を再構築している。RED LABOの製品は、音、映像、人工知能の境界をなくすことを目指している。',
+        description: 'RED LABO&regはイノベーション拠点であり、AI統合型音響映像インタラクティブ製品を開発し、テクノロジーと創造的表現の関係性を再構築している。RED LABOの製品は、音、映像、人工知能の境界をなくすことを目指している。',
       },
       bitVibe: {
-        name: 'BitVibe',
+        name: 'BitVibe&reg',
         tagline: 'プロフェッショナルギア',
-        description: 'BitVibeは信頼性とパフォーマンスに優れた完成度の高いオーディオ周辺機器を提供する。スタジオクラスのスピーカー、MIDIキーボードからプロフェッショナルDJ機器まで、BitVibeは精度と使いやすさを兼ね備えたツールでクリエイターをサポートする。',
+        description: 'BitVibe&regは信頼性とパフォーマンスに優れた完成度の高いオーディオ周辺機器を提供する。スタジオクラスのスピーカー、MIDIキーボードからプロフェッショナルDJ機器まで、BitVibeは精度と使いやすさを兼ね備えたツールでクリエイターをサポートする。',
       },
     },
     products: {
@@ -183,14 +183,14 @@ export const translations = {
     },
     brands: {
       redLabo: {
-        name: 'RED LABO',
+        name: 'RED LABO&reg',
         tagline: '크리에이티브 테크의 미래',
-        description: 'RED LABO는 AI가 통합된 오디오-비주얼 인터랙티브 제품을 선도하는 전위적 혁신 허브로, 기술과 창의적 표현의 관계를 재구상합니다. 모든 RED LABO 제품은 사운드, 비전, 인공지능의 경계를 허물기 위해 설계되었습니다.',
+        description: 'RED LABO&reg는 AI가 통합된 오디오-비주얼 인터랙티브 제품을 선도하는 전위적 혁신 허브로, 기술과 창의적 표현의 관계를 재구상합니다. 모든 RED LABO 제품은 사운드, 비전, 인공지능의 경계를 허물기 위해 설계되었습니다.',
       },
       bitVibe: {
-        name: 'BitVibe',
+        name: 'BitVibe&reg',
         tagline: '프로페셔널 기본 장비',
-        description: 'BitVibe는 프리미엄 보조 라인으로, 신뢰성과 성능이 입증된 완성도 높은 오디오 주변기기를 제공합니다. 스튜디오급 스피커, MIDI 키보드부터 전문 DJ 장비까지, BitVibe는 정밀성과 접근성을 결합한 도구로 크리에이터를 지원합니다.',
+        description: 'BitVibe&reg는 프리미엄 보조 라인으로, 신뢰성과 성능이 입증된 완성도 높은 오디오 주변기기를 제공합니다. 스튜디오급 스피커, MIDI 키보드부터 전문 DJ 장비까지, BitVibe는 정밀성과 접근성을 결합한 도구로 크리에이터를 지원합니다.',
       },
     },
     products: {
