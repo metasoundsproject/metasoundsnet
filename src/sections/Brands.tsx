@@ -81,7 +81,7 @@ export default function Brands() {
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
-                className="w-1/2 h-1/2 object-cover"
+                className="w-3/4 h-3/4 object-cover"
               />
             </div>
             {/* Red accent */}
