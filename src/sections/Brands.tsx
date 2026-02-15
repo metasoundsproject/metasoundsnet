@@ -85,7 +85,7 @@ export default function Brands() {
   "
   style={{
   opacity: 0,
-  background: 'linear-gradient(to top, rgba(255,0,0,0.05), #f9fafb)',
+  background: 'linear-gradient(to top, rgba(255,0,0,0.025), #f9fafb)',
   boxShadow: `
     0 10px 30px rgba(0,0,0,0.04),
     0 30px 80px rgba(0,0,0,0.06)
