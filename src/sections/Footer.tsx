@@ -119,7 +119,7 @@ export default function Footer() {
               >
                 RED LABO
               </a>
-              </span>
+              
               <span className="w-1 h-1 bg-white/30 rounded-full" />
 
               <a
