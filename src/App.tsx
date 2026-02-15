@@ -7,6 +7,7 @@ import Products from './sections/Products';
 import Philosophy from './sections/Philosophy';
 import Footer from './sections/Footer';
 import './App.css';
+import Cursor from "./components/Cursor";
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <div className="relative">
         <Navigation />
         <main>
+          <Cursor />
+      {/* 你的 routes / sections */}
           <Philosophy />
           
           <Brands />
