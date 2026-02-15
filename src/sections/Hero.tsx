@@ -87,7 +87,7 @@ export default function Hero() {
       </div>
 
       {/* Brand Tag */}
-      <div className="absolute bottom-8 left-6 lg:left-12">
+      <div className="absolute top-8 left-6 lg:left-12">
         <p className="font-mono text-xs text-black/40 tracking-widest uppercase">
           Red LABO — Flagship Series
         </p>
@@ -155,13 +155,13 @@ export default function Hero() {
       
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 right-6 lg:right-12">
+       {/* <div className="absolute bottom-8 right-6 lg:right-12">
         <div className="flex flex-col items-center gap-2">
           <div className="w-px h-12 bg-black/20 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1/2 bg-black animate-[slide-down_1.5s_ease-in-out_infinite]" />
           </div>
         </div>
-      </div>
+      </div>*/}
 
       <style>{`
         @keyframes slide-down {
