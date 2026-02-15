@@ -100,7 +100,39 @@ gsap.to('.subtitle-shimmer', {
         
         <p
   className="philosophy-text subtitle-shimmer text-xl lg:text-2xl text-black/60 font-light max-w-2xl mx-auto relative overflow-hidden"
-  style={{ opacity: 0 }}
+  <style>{`
+  @keyframes slide-down {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(200%); }
+  }
+
+  /* shimmer animation */
+  @keyframes shimmer {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(120%); }
+  }
+
+  .subtitle-shimmer {
+    position: relative;
+  }
+
+  .shimmer-light {
+    background: linear-gradient(
+      110deg,
+      transparent 0%,
+      rgba(255,255,255,0.6) 50%,
+      transparent 100%
+    );
+    mix-blend-mode: overlay;
+    opacity: 0.25;
+    animation: shimmer 4s linear infinite;
+    filter: blur(8px);
+  }
+
+  .subtitle-shimmer:hover .shimmer-light {
+    opacity: 0.6;
+  }
+`}</style>
 >
   <span className="relative z-10">
     {t.philosophy.subtitle}
