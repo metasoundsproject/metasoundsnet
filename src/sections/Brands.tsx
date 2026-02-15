@@ -76,6 +76,7 @@ export default function Brands() {
           style={{ opacity: 0 }}
         >
           <div className="relative">
+           {/* <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden"> */}
             <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
               <img
                 src="./redlabologo.png"
@@ -102,7 +103,7 @@ export default function Brands() {
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
-                Synthesizer
+                AI-Powered
               </span>
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
                 Interactive
@@ -135,10 +136,10 @@ export default function Brands() {
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
-                MIDI Controller
+                Audio Devices
               </span>
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
-                DJ Equipment
+                PC/Gaming peripheral
               </span>
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
                 Portable
@@ -147,10 +148,11 @@ export default function Brands() {
           </div>
           
           <div className="order-1 lg:order-2 relative">
-            <div className="aspect-square bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl overflow-hidden">
+            {/*<div className="aspect-square bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl overflow-hidden"> */}
+            <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
               <img
-                src="./bitvibe-midi.jpg"
-                alt="BitVibe MIDI"
+                src="./bitvibelogo.png"
+                alt="BitVibe"
                 className="w-full h-full object-cover"
               />
             </div>
