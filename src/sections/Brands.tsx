@@ -83,7 +83,10 @@ export default function Brands() {
     p-12
     
   "
-  style={{ opacity: 0 }}
+  style={{
+  opacity: 0,
+  background: 'linear-gradient(to bottom, rgba(255,0,0,0.05), #f9fafb)'
+}}
 >
           
 
@@ -142,7 +145,10 @@ export default function Brands() {
     rounded-3xl
     p-12
   "
-  style={{ opacity: 0 }}
+  style={{
+  opacity: 0,
+  background: 'linear-gradient(to bottom, rgba(59,130,246,0.05), #f9fafb)'
+}}
 >
           <div className="order-2 lg:order-1 lg:pr-8">
             <div className="flex items-center gap-4 mb-6">
