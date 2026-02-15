@@ -76,7 +76,7 @@ export default function Brands() {
           style={{ opacity: 0 }}
         >
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden">
+            <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
