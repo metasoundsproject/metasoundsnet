@@ -86,6 +86,13 @@ export default function Hero() {
         />
       </div>
 
+      {/* Brand Tag */}
+      <div className="absolute bottom-8 left-6 lg:left-12">
+        <p className="font-mono text-xs text-black/40 tracking-widest uppercase">
+          Red LABO — Flagship Series
+        </p>
+      </div>
+
       <div className="relative z-10 w-full px-6 lg:px-12 py-24">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Product Image */}
@@ -145,12 +152,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Brand Tag */}
-      <div className="absolute bottom-8 left-6 lg:left-12">
-        <p className="font-mono text-xs text-black/40 tracking-widest uppercase">
-          Red LABO — Flagship Series
-        </p>
-      </div>
+      
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 right-6 lg:right-12">
