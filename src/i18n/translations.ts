@@ -10,32 +10,34 @@ export const translations = {
     hero: {
       title: 'OTO',
       subtitle: 'AI-Powered Audio-Visual Interactive Synthesizer',
-      description: 'Redefine creative expression with OTO – where AI, touch, and motion converge to craft immersive audio-visual experiences that push the boundaries of music and visual creation.',
+      description: 'Redefine creative expression with OTO – where AI, sound, and motion converge to craft immersive audio-visual experiences that push the boundaries of music and visual creation.',
       cta: 'Explore OTO',
     },
     brands: {
       redLabo: {
         name: 'RED LABO®',
         tagline: 'Future of Creative Tech',
-        description: 'RED LABO® is the innovation hub pioneering AI-integrated audio-visual interactive products that reimagine the relationship between technology and creative expression. Every RED LABO creation is engineered to blur the lines between sound, vision, and artificial intelligence.',
+        description: 'RED LABO® is an experimental innovation hub pioneering AI-integrated audio-visual interactive products that reimagine the relationship between technology and creative expression. Every RED LABO creation is engineered to blur the lines between sound, vision, and artificial intelligence.',
       },
       bitVibe: {
         name: 'BitVibe®',
         tagline: 'Essential Pro Gear',
-        description: 'BitVibe® delivers refined, industry-proven audio peripherals designed for reliability and performance. From studio-grade speakers and MIDI keyboards to professional DJ gear, BitVibe empowers creators with tools that combine precision and accessibility.',
+        description: 'BitVibe® delivers refined, industry-proven audio and PC/gaming peripherals designed for reliability and high performance. From studio-grade speakers and MIDI keyboards to professional electronic gear, BitVibe empowers creators with tools that combine precision and accessibility.',BitVibe® は、業界で実証された高品質なオーディオ＆ゲーミングギアを提供。
+精度と使いやすさを融合させたプロフェッショナルツールで、
+クリエイターの可能性を解き放ちます。
       },
     },
     products: {
-      title: 'Our Product Ecosystem',
+      title: 'Product Ecosystem',
       oto: {
         name: 'OTO',
-        category: 'AI Synthesizer',
-        description: 'Flagship AI-driven audio-visual interactive synthesizer with adaptive touch-sensitive controls and real-time visual feedback.',
+        category: 'AI Synthesizer/ MIDI Controller',
+        description: 'Flagship AI-driven audio-visual interactive synthesizer with pressure-sensitive aftertouch controls and real-time visual feedback.',
       },
       midi: {
         name: 'MIDI Pro',
         category: 'MIDI Controller',
-        description: 'Professional compact MIDI keyboard with RGB backlit keys, customizable controls, and plug-and-play functionality.',
+        description: 'Professional compact MIDI keyboard with DJ-like scratch controller and plug-and-play functionality.',
       },
       sound: {
         name: 'Sound System',
@@ -45,13 +47,13 @@ export const translations = {
     },
     philosophy: {
       title: 'Creativity Without Boundaries',
-      subtitle: 'Think Brilliant',
+      subtitle: 'Think Brilliant, Work Smart',
     },
     footer: {
       contact: 'Contact',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: 'Tokyo, Japan',
+      address: 'Tokyo, Japan; Huizhou, China; Kunming, China',
       links: 'Links',
       follow: 'Follow Us',
       copyright: '© 2026 MetaSounds. All rights reserved.',
@@ -66,48 +68,48 @@ export const translations = {
     hero: {
       title: 'OTO',
       subtitle: 'AI智能音视交互合成器',
-      description: '以OTO重新定义创意表达——融合AI、触控与动态感应技术，打造沉浸式音视体验，突破音乐与视觉创作的边界。',
+      description: '以OTO重新定义创意表达——融合AI、声音与动态感应技术，打造沉浸式音视体验，突破音乐与视觉创作的边界。',
       cta: '探索OTO',
     },
     brands: {
       redLabo: {
         name: 'RED LABO®',
         tagline: '创意科技的未来',
-        description: 'RED LABO® 作为创新核心枢纽，率先研发AI融合型音视交互产品，重新构建科技与创意表达的联结。每一款RED LABO产品均以打破声音、视觉与人工智能的边界为设计核心。',
+        description: 'RED LABO® 作为实验性的创新枢纽，率先研发AI融合型音视交互产品，重新构建科技与创意表达的联结。每一款RED LABO产品均以打破声音、视觉与人工智能的边界为设计核心。',
       },
       bitVibe: {
         name: 'BitVibe®',
         tagline: '专业级核心装备',
-        description: 'BitVibe® 提供经行业验证、工艺精湛的音频外设产品，兼具可靠性与卓越性能。从工作室级监听音箱、MIDI键盘到专业DJ设备，BitVibe以精准易用的工具赋能创作者。',
+        description: 'BitVibe® 提供经行业验证、工艺精湛的外设产品，兼具可靠性与卓越性能。从工作室级监听音箱、MIDI键盘到各类专业设备，BitVibe以精准易用的工具赋能创作者。',
       },
     },
     products: {
-      title: '产品生态体系',
+      title: '产品生态',
       oto: {
         name: 'OTO',
         category: 'AI合成器',
-        description: '旗舰级AI驱动音视交互合成器，搭载自适应触控感应操控系统及实时视觉反馈功能。',
+        description: '旗舰级AI驱动音视交互合成器，搭载压感和触后键盘及实时音画互动和反馈功能。',
       },
       midi: {
         name: 'MIDI Pro',
         category: 'MIDI控制器',
-        description: '专业级紧凑型MIDI键盘，配备RGB背光按键、可自定义操控界面及即插即用功能。',
+        description: '专业级紧凑型MIDI键盘，配备DJ搓碟控制器。',
       },
       sound: {
-        name: '专业音响系统',
-        category: '定制化设计',
+        name: '音画交互设计',
+        category: '设计',
         description: '专业级解决方案融合前沿工程技术与简约美学设计，为您的声音及视觉创意赋予清晰质感与澎湃动力。',
       },
     },
     philosophy: {
       title: '创意无界',
-      subtitle: '智启非凡',
+      subtitle: '思以慧达，业以敏成',
     },
     footer: {
       contact: '联系我们',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: '日本·东京',
+      address: '日本·东京; 中国·惠州; 中国·昆明',
       links: '相关链接',
       follow: '关注我们',
       copyright: '© 2026 MetaSounds. 保留所有权利。',
@@ -117,13 +119,13 @@ export const translations = {
     nav: {
       products: '製品エコシステム',
       about: '会社概要',
-      support: 'サポートサービス',
+      support: 'サポート',
     },
     hero: {
       title: 'OTO',
-      subtitle: 'AI駆動型オーディオビジュアルインタラクティブシンセサイザー',
-      description: 'OTOで創造的表現を再定義せよ。AI、タッチ、モーションが融合し、音楽とビジュアルクリエイションの限界を超える没入型オーディオビジュアル体験を創出する。',
-      cta: 'OTOを探索する',
+      subtitle: 'AI搭載のオーディオビジュアル対応インタラクティブ・シンセサイザー',
+      description: 'OTOで、創造はもっと自由になる。AIとタッチ、モーションがひとつに溶け合い、音と映像が響き合う没入型の体験へ。',
+      cta: 'OTOを探索せよ',
     },
     brands: {
       redLabo: {
@@ -150,21 +152,21 @@ export const translations = {
         description: 'プロフェッショナルコンパクトMIDIキーボード。RGBバックライトキー、カスタマイズ可能なコントロール、プラグアンドプレイ機能を備える。',
       },
       sound: {
-        name: 'サウンドシステム',
-        category: 'デザインソリューション',
-        description: 'プロフェッショナルソリューションは先進的なエンジニアリングと洗練された美学を融合し、サウンドとビジュアルクリエイティビティにクラリティとパワーをもたらす。',
+        name: 'サウンドソリューション',
+        category: 'デザイン',
+        description: '最先端エンジニアリングと洗練美学が融合。プロフェッショナルソリューションが、サウンド＆ビジュアルクリエイティビティに明晰さと力を与える。',
       },
     },
     philosophy: {
-      title: '境界のない創造性',
-      subtitle: '卓越な思考',
+      title: '創造に、境界線はない',
+      subtitle: '卓越に思考し、スマートに創る。',
     },
     footer: {
       contact: 'お問い合わせ',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: '日本 東京都',
-      links: 'リンク集',
+      address: '日本 東京都·中国 惠州市·中国 昆明市',
+      links: 'リンク',
       follow: 'フォロー',
       copyright: '© 2026 MetaSounds. 全著作権所有。',
     },
