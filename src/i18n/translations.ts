@@ -51,7 +51,7 @@ export const translations = {
       contact: 'Contact',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: 'Tokyo, Japan',
+      address: 'Tokyo, Japan·Kunming, China',
       links: 'Links',
       follow: 'Follow Us',
       copyright: '© 2026 MetaSounds. All rights reserved.',
@@ -107,7 +107,7 @@ export const translations = {
       contact: '联系我们',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: '日本·东京',
+      address: '日本东京·中国昆明',
       links: '相关链接',
       follow: '关注我们',
       copyright: '© 2026 MetaSounds. 保留所有权利。',
@@ -128,7 +128,8 @@ export const translations = {
     brands: {
       redLabo: {
         name: 'RED LABO®',
-        tagline: 'RED LABO®は、AIを融合したオーディオビジュアル・インタラクティブ製品を先駆けて開発する実験的イノベーション拠点です。テクノロジーと創造表現の関係を再構築し、すべてのRED LABOのプロダクトは、音・映像・人工知能の境界を曖昧にするよう設計されています。',
+        tagline: 'クリエイティブテックの未来'
+        description: 'RED LABO®は、AIを融合したオーディオビジュアル・インタラクティブ製品を先駆けて開発する実験的イノベーション拠点です。テクノロジーと創造表現の関係を再構築し、すべてのRED LABOのプロダクトは、音・映像・人工知能の境界を曖昧にするよう設計されています。',
       },
       bitVibe: {
         name: 'BitVibe®',
@@ -162,7 +163,7 @@ export const translations = {
       contact: 'お問い合わせ',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: '日本 東京都',
+      address: '日本 東京都·中国 昆明市',
       links: 'リンク',
       follow: 'フォロー',
       copyright: '© 2026 MetaSounds. 全著作権所有。',
