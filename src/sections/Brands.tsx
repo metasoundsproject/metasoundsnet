@@ -85,7 +85,11 @@ export default function Brands() {
   "
   style={{
   opacity: 0,
-  background: 'linear-gradient(to bottom, rgba(255,0,0,0.05), #f9fafb)'
+  background: 'linear-gradient(to bottom, rgba(255,0,0,0.05), #f9fafb)',
+  boxShadow: `
+    0 10px 30px rgba(0,0,0,0.04),
+    0 30px 80px rgba(0,0,0,0.06)
+  `,
 }}
 >
           
@@ -147,7 +151,11 @@ export default function Brands() {
   "
   style={{
   opacity: 0,
-  background: 'linear-gradient(to bottom, rgba(59,130,246,0.05), #f9fafb)'
+  background: 'linear-gradient(to bottom, rgba(59,130,246,0.05), #f9fafb)',
+  boxShadow: `
+    0 10px 30px rgba(0,0,0,0.04),
+    0 30px 80px rgba(0,0,0,0.06)
+  `,
 }}
 >
           <div className="order-2 lg:order-1 lg:pr-8">
