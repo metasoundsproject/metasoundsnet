@@ -29,7 +29,7 @@ export const translations = {
       title: 'Product Ecosystem',
       oto: {
         name: 'OTO',
-        category: 'AI Synthesizer/ MIDI Controller',
+        category: 'AI Synthesizer',
         description: 'Flagship AI-driven audio-visual interactive synthesizer with pressure-sensitive aftertouch controls and real-time visual feedback.',
       },
       midi: {
@@ -38,7 +38,7 @@ export const translations = {
         description: 'Professional compact MIDI keyboard with DJ-like scratch controller and plug-and-play functionality.',
       },
       sound: {
-        name: 'Sound System',
+        name: 'Interactive Design',
         category: 'Design',
         description: 'Professional solutions combine cutting-edge engineering with sleek aesthetics, bringing clarity and power to your sound and visual creativity.',
       },
@@ -115,7 +115,7 @@ export const translations = {
   },
   ja: {
     nav: {
-      products: '製品エコシステム',
+      products: '製品',
       about: '会社概要',
       support: 'サポート',
     },
@@ -149,7 +149,7 @@ export const translations = {
         description: 'DJスタイルのスクラッチ操作を備えた、すぐに使えるプロ仕様のコンパクトMIDIキーボード。',
       },
       sound: {
-        name: 'サウンドソリューション',
+        name: 'インタラクティブデザイン',
         category: 'デザイン',
         description: '最先端のエンジニアリングと洗練されたデザインを融合し、音とビジュアルの創造にクリアさと力強さをもたらすプロフェッショナルソリューション。',
       },
