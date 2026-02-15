@@ -85,7 +85,7 @@ export default function Brands() {
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
-                className="w-3/4 h-3/4 object-cover drop-shadow-lg shadow-md"
+                className="w-3/4 h-3/4 object-cover"
               />
              
             </div>
@@ -159,7 +159,7 @@ export default function Brands() {
               <img
                 src="./bitvibelogo.png"
                 alt="BitVibe"
-                className="w-3/4 h-3/4 object-cover drop-shadow-lg shadow-md "
+                className="w-3/4 h-3/4 object-cover "
               />
              
             </div>
