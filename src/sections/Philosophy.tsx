@@ -29,7 +29,17 @@ export default function Philosophy() {
         },
       });
       triggers.push(titleTrigger);
-
+      // subtitle parallax
+gsap.to('.subtitle-shimmer', {
+  y: -30,
+  ease: 'none',
+  scrollTrigger: {
+    trigger: sectionRef.current,
+    start: 'top bottom',
+    end: 'bottom top',
+    scrub: true,
+  },
+});
       // Text reveal animation
       const revealTrigger = ScrollTrigger.create({
         trigger: sectionRef.current,
