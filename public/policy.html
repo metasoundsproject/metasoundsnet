@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Privacy Policy</title>
-
-<style>
+<title>Privacy Policy</title><style>
 :root {
-  --bg: #000000;
+  --bg: #000;
   --text-primary: #f2f2f2;
   --text-secondary: #cfcfcf;
-  --text-muted: #888888;
+  --text-muted: #888;
   --border: #1a1a1a;
-  --accent: #ffffff;
+  --accent: #fff;
   --max-width: 900px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background: var(--bg);
@@ -32,25 +25,39 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Back button */
+/* Navigation */
 
 .home-button {
   position: fixed;
   top: 32px;
   left: 32px;
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
   color: #fff;
   text-decoration: none;
-  padding-bottom: 2px;
   border-bottom: 1px solid rgba(255,255,255,0.3);
-  transition: all 0.2s ease;
 }
 
-.home-button:hover {
+.lang-switch {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+
+.lang-switch button.active,
+.lang-switch button:hover {
+  color: #fff;
   border-bottom-color: #fff;
-  opacity: 0.7;
 }
 
 /* Layout */
@@ -61,57 +68,16 @@ body {
   padding: 100px 24px 80px;
 }
 
+.policy { display: none; }
+.policy.active { display: block; }
+
 /* Typography */
 
-h1 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: var(--text-primary);
-}
-
-.last-updated {
-  color: var(--text-muted);
-  margin-bottom: 48px;
-  font-size: 14px;
-}
-
-h2 {
-  font-size: 22px;
-  margin-top: 40px;
-  margin-bottom: 12px;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-p {
-  margin-bottom: 14px;
-  color: var(--text-secondary);
-}
-
-ul {
-  margin: 12px 0 12px 20px;
-  color: var(--text-secondary);
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-/* Links */
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-}
-
-a:hover {
-  border-bottom-color: #fff;
-  opacity: 0.7;
-}
-
-/* Footer */
+h1 { font-size: 48px; margin-bottom: 16px; }
+.last-updated { color: var(--text-muted); margin-bottom: 48px; font-size: 14px; }
+h2 { font-size: 22px; margin-top: 40px; margin-bottom: 12px; }
+p { margin-bottom: 14px; color: var(--text-secondary); }
+ul { margin: 12px 0 12px 20px; color: var(--text-secondary); }
 
 footer {
   margin-top: 80px;
@@ -121,98 +87,58 @@ footer {
   font-size: 14px;
 }
 
-/* Responsive */
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .container {
-    padding: 80px 20px 60px;
-  }
+  h1 { font-size: 36px; }
+  .container { padding: 80px 20px 60px; }
 }
-</style>
-</head>
+</style></head><body><a href="/index.html" class="home-button">← Back</a>
 
-<body>
-
-<a href="/index.html" class="home-button">← Back to MetaSounds</a>
-
-<div class="container">
-
+<div class="lang-switch">
+<button onclick="switchLang('en')" class="active">EN</button>
+<button onclick="switchLang('zh')">中文</button>
+<button onclick="switchLang('ja')">日本語</button>
+<button onclick="switchLang('ko')">한국어</button>
+</div><div class="container"><!-- ENGLISH --><div id="en" class="policy active">
 <h1>Privacy Policy</h1>
-<p class="last-updated">Last updated: January 1, 2026</p>
+<p class="last-updated">Last updated: January 1, 2026</p><p>We respect your privacy and are committed to protecting your personal information.</p><h2>Information We Collect</h2>
+<p>We may collect personal information you voluntarily provide, usage data, and cookies to improve our services.</p><h2>Use of Information</h2>
+<p>Information is used to operate services, enhance user experience, communicate with users, and comply with legal obligations.</p><h2>Data Sharing</h2>
+<p>We do not sell personal data. Information may be shared with trusted service providers or when legally required.</p><h2>Security</h2>
+<p>We implement reasonable safeguards to protect your data.</p><h2>Contact</h2>
+<p>Email: <a href="mailto:contact@metasounds.net">contact@metasounds.net</a></p><footer>© 2026 MetaSounds</footer>
+</div><!-- 中文 --><div id="zh" class="policy">
+<h1>隐私政策</h1>
+<p class="last-updated">更新日期：2026年1月1日</p><p>我们重视您的隐私，并致力于保护您的个人信息安全。</p><h2>信息收集</h2>
+<p>我们可能收集您主动提供的个人信息、使用数据以及用于优化服务的 Cookie 数据。</p><h2>信息使用</h2>
+<p>所收集的信息用于提供服务、提升用户体验、与您沟通以及履行法律义务。</p><h2>信息共享</h2>
+<p>我们不会出售您的个人信息，仅在必要时与可信的服务提供方共享或依法披露。</p><h2>数据安全</h2>
+<p>我们采取合理的技术与管理措施保护您的数据安全。</p><h2>联系我们</h2>
+<p>邮箱：<a href="mailto:contact@metasounds.net">contact@metasounds.net</a></p><footer>© 2026 MetaSounds 版权所有</footer>
+</div><!-- 日本語 --><div id="ja" class="policy">
+<h1>プライバシーポリシー</h1>
+<p class="last-updated">最終更新日：2026年1月1日</p><p>当社はお客様のプライバシーを尊重し、個人情報の保護に努めます。</p><h2>収集する情報</h2>
+<p>提供された個人情報、利用状況データ、Cookie等を収集する場合があります。</p><h2>利用目的</h2>
+<p>サービス提供、品質向上、連絡対応、および法的義務の履行のために利用します。</p><h2>第三者提供</h2>
+<p>個人情報を販売することはありません。必要に応じて信頼できる業者または法令に基づき共有します。</p><h2>安全管理</h2>
+<p>合理的な安全対策を実施しています。</p><h2>お問い合わせ</h2>
+<p>Email: <a href="mailto:contact@metasounds.net">contact@metasounds.net</a></p><footer>© 2026 MetaSounds</footer>
+</div><!-- 한국어 --><div id="ko" class="policy">
+<h1>개인정보 처리방침</h1>
+<p class="last-updated">최종 업데이트: 2026년 1월 1일</p><p>당사는 사용자의 개인정보를 존중하며 보호를 위해 최선을 다합니다.</p><h2>수집하는 정보</h2>
+<p>사용자가 제공한 개인정보, 이용 데이터, 쿠키 정보를 수집할 수 있습니다.</p><h2>정보 이용 목적</h2>
+<p>서비스 운영, 사용자 경험 개선, 커뮤니케이션 및 법적 의무 이행을 위해 사용됩니다.</p><h2>정보 공유</h2>
+<p>개인정보를 판매하지 않으며, 필요한 경우 신뢰할 수 있는 업체 또는 법적 요구에 따라 공유됩니다.</p><h2>보안</h2>
+<p>합리적인 보안 조치를 시행하고 있습니다.</p><h2>문의</h2>
+<p>Email: <a href="mailto:contact@metasounds.net">contact@metasounds.net</a></p><footer>© 2026 MetaSounds</footer>
+</div></div><script>
+function switchLang(lang) {
+  document.querySelectorAll('.policy').forEach(el => el.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
 
-<p>
-This Privacy Policy explains how we collect, use, disclose, and safeguard
-your information when you visit our website and use our services.
-We are committed to protecting your personal data and respecting your privacy.
-</p>
-
-<h2>1. Information We Collect</h2>
-<p>We may collect the following types of information:</p>
-<ul>
-<li><strong>Personal Information:</strong> Name, email address, and contact details you voluntarily provide.</li>
-<li><strong>Usage Data:</strong> Information about how you access and use the website, including IP address, browser type, and interaction data.</li>
-<li><strong>Cookies and Tracking Technologies:</strong> We use cookies and similar technologies to improve functionality and user experience.</li>
-</ul>
-
-<h2>2. How We Use Your Information</h2>
-<p>We use collected information to:</p>
-<ul>
-<li>Provide and maintain our services</li>
-<li>Improve website performance and user experience</li>
-<li>Communicate with you regarding updates or inquiries</li>
-<li>Comply with legal obligations</li>
-</ul>
-
-<h2>3. Sharing of Information</h2>
-<p>
-We do not sell your personal information. We may share information with trusted
-service providers who assist in operating our website, or when required by law.
-</p>
-
-<h2>4. Data Security</h2>
-<p>
-We implement reasonable administrative and technical safeguards to protect
-your personal information. However, no method of transmission over the internet
-is completely secure.
-</p>
-
-<h2>5. Your Privacy Rights</h2>
-<p>
-Depending on your jurisdiction, you may have the right to access, correct,
-or delete your personal data. You may contact us to exercise these rights.
-</p>
-
-<h2>6. Third-Party Links</h2>
-<p>
-Our website may contain links to third-party sites. We are not responsible
-for their privacy practices or content.
-</p>
-
-<h2>7. Changes to This Policy</h2>
-<p>
-We may update this Privacy Policy from time to time. Updates will be posted
-on this page with a revised date.
-</p>
-
-<h2>8. Contact Us</h2>
-<p>
-If you have questions about this Privacy Policy, you may contact us at:<br/>
-Email: <a href="mailto:contact@metasounds.net">contact@metasounds.net</a>
-</p>
-
-<footer>
-© 2026 MetaSounds. All rights reserved.
-</footer>
-
-</div>
-
-</body>
+  document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script></body>
 </html>
