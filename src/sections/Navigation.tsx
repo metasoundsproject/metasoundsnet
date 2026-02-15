@@ -118,7 +118,7 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8 md:hidden">
           <button
-            onClick={() => scrollToSection('products')}
+            onClick={() => scrollToSection('hero')}
             className="text-2xl font-medium"
           >
             {t.nav.products}
