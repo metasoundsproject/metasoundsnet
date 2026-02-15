@@ -16,9 +16,17 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-3xl font-bold mb-4">Support</h3>
 
-          <div className="inline-block bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-lg px-4 py-2 mb-8 backdrop-blur-sm">
-            <p className="text-white/80 max-w-md mb-8">One-Year Warranty · 30-Day Returns · Free Worldwide Shipping</p>
-          </div>
+         <div className="group relative inline-block mb-8">
+  {/* glow layer */}
+  <div className="absolute inset-0 rounded-lg bg-white/20 blur-md opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
+
+  {/* main badge */}
+  <div className="relative bg-white/10 border border-white/20 rounded-lg px-4 py-2 backdrop-blur-sm transition-all duration-300 group-hover:bg-white/15 group-hover:-translate-y-0.5">
+    <p className="text-white/90 text-sm tracking-wide">
+      One-Year Warranty · 30-Day Returns · Free Worldwide Shipping
+    </p>
+  </div>
+</div>
              <p className="text-white/60 max-w-md mb-8">Redefining art creation through innovative technology. 
               Smart instruments, professional audio equipment, and PC/gaming peripherals.
             </p>
