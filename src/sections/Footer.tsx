@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
-import { Mail, Phone, MapPin, Instagram, X, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, X, Youtube, Tiktok } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -36,6 +36,13 @@ export default function Footer() {
               </a>
               <a
                 href="https://www.youtube.com/"
+                target="_blank"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+              >
+                <Tiktok className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.tiktok.com/"
                 target="_blank"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
