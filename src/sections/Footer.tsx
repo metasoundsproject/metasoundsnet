@@ -73,7 +73,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-white transition-colors link-underline">
+                <a href="#footer" className="text-white/70 hover:text-white transition-colors link-underline">
                   {t.nav.support}
                 </a>
               </li>
