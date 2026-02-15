@@ -128,7 +128,7 @@ export const translations = {
     brands: {
       redLabo: {
         name: 'RED LABO®',
-        tagline: 'クリエイティブテックの未来'
+        tagline: 'クリエイティブテックの未来',
         description: 'RED LABO®は、AIを融合したオーディオビジュアル・インタラクティブ製品を先駆けて開発する実験的イノベーション拠点です。テクノロジーと創造表現の関係を再構築し、すべてのRED LABOのプロダクトは、音・映像・人工知能の境界を曖昧にするよう設計されています。',
       },
       bitVibe: {
@@ -142,7 +142,7 @@ export const translations = {
       oto: {
         name: 'OTO',
         category: 'AIシンセサイザー',
-        description: 'フラッグシップ級AI駆動型圧力感知アフタータッチ操作とリアルタイムのビジュアルフィードバックを備えた、フラッグシップのAI駆動型オーディオビジュアル・インタラクティブ・シンセサイザー。',
+        description: '圧力感知アフタータッチ操作とリアルタイムのビジュアルフィードバックを備えた、フラッグシップ級AI駆動型オーディオビジュアル・インタラクティブ・シンセサイザー。',
       },
       midi: {
         name: 'MIDI Pro',
@@ -171,7 +171,7 @@ export const translations = {
   },
   ko: {
     nav: {
-      products: '제품 생태계',
+      products: '제품',
       about: '회사 소개',
       support: '고객 지원 서비스',
     },
@@ -213,7 +213,7 @@ export const translations = {
     },
     philosophy: {
       title: '경계 없는 창의성',
-      subtitle: '뛰어난 사고',
+      subtitle: '뛰어나게 사고하고, 스마트하게 창조하다',
     },
     footer: {
       contact: '연락처',
