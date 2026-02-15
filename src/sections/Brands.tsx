@@ -76,7 +76,7 @@ export default function Brands() {
   className="
     relative
     grid lg:grid-cols-2 gap-12 items-center mb-32
-    bg-gradient-to-b
+    bg-gradient-to-t
     from-gray-50
     to-red-50/60
     rounded-3xl
@@ -85,7 +85,7 @@ export default function Brands() {
   "
   style={{
   opacity: 0,
-  background: 'linear-gradient(to bottom, rgba(255,0,0,0.05), #f9fafb)',
+  background: 'linear-gradient(to top, rgba(255,0,0,0.05), #f9fafb)',
   boxShadow: `
     0 10px 30px rgba(0,0,0,0.04),
     0 30px 80px rgba(0,0,0,0.06)
