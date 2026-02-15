@@ -78,6 +78,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/story.html" className="text-white/70 hover:text-white transition-colors link-underline">
+                  Company History
+                </a>
+              </li>
+              <li>
                 <a href="/policy.html" className="text-white/70 hover:text-white transition-colors link-underline">
                   Privacy Policy
                 </a>
