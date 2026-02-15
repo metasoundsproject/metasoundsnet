@@ -56,7 +56,7 @@ export default function Brands() {
     <section
       id="brands"
       ref={sectionRef}
-      className="relative py-32 bg-white"
+      className="relative py-32 bg-gray-50"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
