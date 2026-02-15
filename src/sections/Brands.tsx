@@ -79,7 +79,8 @@ export default function Brands() {
     bg-gradient-to-b
     from-red-50/60
     to-gray-50
-    
+    rounded-3xl
+    p-12
     
   "
   style={{ opacity: 0 }}
