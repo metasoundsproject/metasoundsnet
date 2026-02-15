@@ -81,11 +81,13 @@ export default function Brands() {
           <div className="relative">
            {/* <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden"> */}
             <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
+              <div className="relative animate-float">
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
                 className="w-3/4 h-3/4 object-cover"
               />
+              </div>
             </div>
             {/* Red accent */}
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-red-500 rounded-full opacity-20 blur-2xl" />
@@ -153,11 +155,13 @@ export default function Brands() {
           <div className="order-1 lg:order-2 relative">
             {/*<div className="aspect-square bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl overflow-hidden"> */}
             <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
+              <div className="relative animate-float">
               <img
                 src="./bitvibelogo.png"
                 alt="BitVibe"
                 className="w-3/4 h-3/4 object-cover"
               />
+              </div>
             </div>
             {/* Blue accent */}
             <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 blur-2xl" />
