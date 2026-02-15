@@ -387,4 +387,32 @@ body {
 <script>
 const floatBar = document.getElementById('floatBar');
 window.addEventListener('scroll', () => {
-  if (window.
+  if (window.scrollY > 200) {
+    floatBar.classList.add('show');
+  } else {
+    floatBar.classList.remove('show');
+  }
+});
+
+const langBtns = document.querySelectorAll('.lang-switch button');
+const contents = document.querySelectorAll('.lang-content');
+langBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.lang;
+    langBtns.forEach(b => b.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('show');
+  });
+}, { threshold: 0.1 });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
