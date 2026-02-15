@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetaSounds - Story</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* 悬浮返回条 + 语言切换 */
+.floating-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.4s cubic-bezier(0.28, 0.11, 0.32, 1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.floating-nav.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.floating-nav a {
+  font-size: 15px;
+  color: #007aff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.lang-switch {
+  display: flex;
+  gap: 12px;
+}
+.lang-switch button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.lang-switch button.active {
+  background: #e1e1e2;
+  color: #000;
+}
+
+/* 容器 */
+.container {
+  max-width: 1000px;
+  margin: 140px auto 160px;
+  padding: 0 24px;
+}
+
+/* 标题 */
+.hero {
+  text-align: center;
+  margin-bottom: 100px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s 0.1s forwards;
+}
+.hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+.hero p {
+  font-size: 22px;
+  color: #86868b;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 章节 */
+.section {
+  margin-bottom: 120px;
+  opacity: 0;
+  transform: translateY(40px);
+}
+.section.show {
+  animation: fadeUp 1s forwards;
+}
+.section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+.section p {
+  font-size: 19px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* 时间线 */
+.timeline {
+  border-left: 2px solid #e5e5ea;
+  padding-left: 32px;
+  margin-top: 36px;
+}
+.timeline-item {
+  margin-bottom: 44px;
+  position: relative;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #007aff;
+  left: -40px;
+  top: 6px;
+}
+.timeline-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.timeline-item p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* 动画 */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 语言内容默认隐藏 */
+.lang-content {
+  display: none;
+}
+.lang-content.active {
+  display: block;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 38px; }
+  .hero p { font-size: 19px; }
+  .section h2 { font-size: 28px; }
+  .section p { font-size: 17px; }
+  .floating-nav { gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- 悬浮导航栏 -->
+<div class="floating-nav" id="floatBar">
+  <a href="https://metasounds.net" target="_blank">← Back to MetaSounds</a>
+  <div class="lang-switch">
+    <button data-lang="zh">中</button>
+    <button data-lang="en" class="active">EN</button>
+    <button data-lang="jp">日</button>
+    <button data-lang="kr">한</button>
+  </div>
+</div>
+
+<div class="container" id="top">
+
+  <!-- ====================== 中文 ====================== -->
+  <div class="lang-content" id="zh">
+    <div class="hero">
+      <h1>MetaSounds 品牌故事</h1>
+      <p>AI 驱动的音乐科技 · 智能乐器与音频生态</p>
+    </div>
+
+    <div class="section">
+      <h2>关于 MetaSounds</h2>
+      <p>MetaSounds 是一家专注于音乐科技的创新公司，以人工智能为核心，打造下一代智能乐器、专业音频设备、创作电脑与游戏外设。</p>
+      <p>我们相信音乐创作不应该被技术门槛限制，因此用 AI 重构声音、演奏、录音与制作流程，让每个人都能轻松表达音乐灵感。</p>
+    </div>
+
+    <div class="section">
+      <h2>创立背景</h2>
+      <p>在数字创作爆发、AI 技术成熟的时代，传统乐器与音频设备依然复杂、昂贵、学习成本高。</p>
+      <p>MetaSounds 由此诞生：用智能与极简设计，让音乐创作变得更简单、更自由、更普惠。</p>
+    </div>
+
+    <div class="section">
+      <h2>发展历程</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2018 · 初心起点</h3>
+          <p>由音乐人与工程师共同发起，研究 AI 与声学结合。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2020 · 品牌成立</h3>
+          <p>MetaSounds 正式成立，确立智能音乐生态方向。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2022 · 首款产品</h3>
+          <p>发布 AI 智能乐器，获得全球创作者与玩家认可。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · 生态布局</h3>
+          <p>覆盖智能乐器、专业音频、创作电脑、游戏外设四大领域。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>品牌理念</h2>
+      <p>智能 · 极简 · 创造 · 开放。</p>
+      <p>MetaSounds 致力于用 AI 降低创作门槛，用科技扩展音乐边界，让每个人都能成为创作者。</p>
+    </div>
+  </div>
+
+  <!-- ====================== English ====================== -->
+  <div class="lang-content active" id="en">
+    <div class="hero">
+      <h1>MetaSounds Story</h1>
+      <p>AI-Powered Music Tech · Smart Instruments & Audio Ecosystem</p>
+    </div>
+
+    <div class="section">
+      <h2>About MetaSounds</h2>
+      <p>MetaSounds is an innovative music technology company focused on building next-generation smart instruments, professional audio gear, creative PCs, and gaming peripherals powered by AI.</p>
+      <p>We believe music creation should not be limited by technical barriers, so we use AI to redefine sound, performance, recording, and production, making musical expression accessible to everyone.</p>
+    </div>
+
+    <div class="section">
+      <h2>Background</h2>
+      <p>In an era of digital creation and advanced AI, traditional instruments and audio equipment remain complex, expensive, and difficult to learn.</p>
+      <p>MetaSounds was founded to simplify music creation with intelligence and minimalist design, making it easier, freer, and more open to all.</p>
+    </div>
+
+    <div class="section">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2018 · The Beginning</h3>
+          <p>Founded by musicians and engineers, researching AI and acoustics.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2020 · Company Launch</h3>
+          <p>MetaSounds officially established, focusing on smart music ecosystem.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2022 · First Product</h3>
+          <p>Launched AI-powered smart instruments, loved by creators worldwide.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · Ecosystem Expansion</h3>
+          <p>Covering smart instruments, audio, creative PCs, and gaming gear.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Philosophy</h2>
+      <p>Intelligence · Minimalism · Creation · Openness.</p>
+      <p>MetaSounds strives to lower creative barriers with AI and expand the boundaries of music through technology.</p>
+    </div>
+  </div>
+
+  <!-- ====================== 日本語 ====================== -->
+  <div class="lang-content" id="jp">
+    <div class="hero">
+      <h1>MetaSounds ストーリー</h1>
+      <p>AI駆動の音楽テック・スマート楽器とオーディオエコシステム</p>
+    </div>
+
+    <div class="section">
+      <h2>MetaSounds について</h2>
+      <p>MetaSoundsは音楽テクノロジーに特化した企業で、AIをコアに次世代スマート楽器、プロ用オーディオ機器、クリエイティブPC、ゲーミング周辺機器を開発しています。</p>
+      <p>技術的な障壁にとらわれず、誰もが音楽を表現できる世界を目指し、AIで音楽制作のプロセスを再定義します。</p>
+    </div>
+
+    <div class="section">
+      <h2>設立背景</h2>
+      <p>デジタルクリエイションが拡大し、AIが進化する時代に、伝統的な楽器やオーディオ機器は未だに複雑で高額です。</p>
+      <p>MetaSoundsはスマートさとシンプルなデザインで、音楽制作をもっと身近に、自由にするために生まれました。</p>
+    </div>
+
+    <div class="section">
+      <h2>歴史</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2018 · 原点</h3>
+          <p>ミュージシャンとエンジニアによってAIと音響の研究を開始。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2020 · 設立</h3>
+          <p>MetaSoundsが正式に設立され、スマート音楽エコシステムを構築。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2022 · 初の製品</h3>
+          <p>AI搭載スマート楽器を発売し、世界中のクリエイターに支持される。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · エコシステム</h3>
+          <p>楽器・オーディオ・クリエイティブPC・ゲーミング機器の4分野に展開。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>ブランド理念</h2>
+      <p>インテリジェンス・ミニマム・クリエイション・オープン。</p>
+      <p>AIで創作の壁を低くし、テクノロジーで音楽の未来を拡げていきます。</p>
+    </div>
+  </div>
+
+  <!-- ====================== 한국어 ====================== -->
+  <div class="lang-content" id="kr">
+    <div class="hero">
+      <h1>MetaSounds 스토리</h1>
+      <p>AI 기반 음악 테크 · 스마트 악기와 오디오 생태계</p>
+    </div>
+
+    <div class="section">
+      <h2>MetaSounds 소개</h2>
+      <p>MetaSounds는 AI를 중심으로 차세대 스마트 악기, 전문 오디오 장비, 크리에이티브 PC, 게이밍 기기를 만드는 음악 테크 기업입니다.</p>
+      <p>음악 창작이 기술의 장벽에 갇히지 않도록 AI로 사운드와 연주, 녹음, 제작 과정을 새롭게 정의합니다.</p>
+    </div>
+
+    <div class="section">
+      <h2>설립 배경</h2>
+      <p>디지털 크리에이션과 AI 기술이 발전하는 시대에도 전통 악기와 오디오 장비는 여전히 복잡하고 비쌉니다.</p>
+      <p>MetaSounds는 지능과 심플한 디자인으로 누구나 쉽게 음악을 만들 수 있도록 탄생했습니다.</p>
+    </div>
+
+    <div class="section">
+      <h2>연혁</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2018 · 시작</h3>
+          <p>뮤지션과 엔지니어가 함께 AI와 음향 연구를 시작.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2020 · 브랜드 론칭</h3>
+          <p>MetaSounds 설립, 스마트 뮤직 생태계 구축.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2022 · 첫 제품</h3>
+          <p>AI 스마트 악기 출시, 전 세계 크리에이터에게 사랑받음.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · 생태계 확장</h3>
+          <p>악기, 오디오, 크리에이티브 PC, 게이밍 기기 전 분야 확장.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>브랜드 철학</h2>
+      <p>지능 · 심플 · 창작 · 개방.</p>
+      <p>MetaSounds는 AI로 창작의 벽을 낮추고, 기술로 음악의 가능성을 넓힙니다.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// 悬浮栏显示隐藏
+const floatBar = document.getElementById('floatBar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    floatBar.classList.add('show');
+  } else {
+    floatBar.classList.remove('show');
+  }
+});
+
+// 语言切换
+const langBtns = document.querySelectorAll('.lang-switch button');
+const contents = document.querySelectorAll('.lang-content');
+
+langBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.lang;
+    langBtns.forEach(b => b.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
+// 滚动渐入
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('show');
+  });
+}, { threshold: 0.1 });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
