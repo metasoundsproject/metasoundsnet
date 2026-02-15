@@ -7,16 +7,7 @@ import Products from './sections/Products';
 import Philosophy from './sections/Philosophy';
 import Footer from './sections/Footer';
 import './App.css';
-import { routes } from './routes/routes';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-<BrowserRouter>
-  <Routes>
-    <Route path={routes.home} element={<Home />} />
-    <Route path={routes.products} element={<Products />} />
-    <Route path={routes.about} element={<About />} />
-  </Routes>
-</BrowserRouter>
 
 function App() {
   useEffect(() => {
