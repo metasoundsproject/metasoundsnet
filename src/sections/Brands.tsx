@@ -139,7 +139,7 @@ export default function Brands() {
                 Audio Devices
               </span>
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
-                PC/Gaming peripheral
+                PC/Gaming Peripheral
               </span>
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
                 Portable
