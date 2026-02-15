@@ -61,43 +61,39 @@ export default function MusicPlayer() {
 
       {/* 悬浮控制面板 */}
       <div className="
-        fixed bottom-6 right-6
-        bg-black/70 backdrop-blur-md
-        px-5 py-3 rounded-2xl
-        shadow-xl
-        flex items-center gap-4
-        z-[9999]
-      ">
+  fixed bottom-6 right-6
+  bg-black/20 backdrop-blur-md
+  px-5 py-3 rounded-2xl
+  shadow-xl
+  flex items-center gap-4
+  z-[9999]
+">
+  {/* 播放按钮 */}
+  <button
+    onClick={togglePlay}
+    className="
+      w-9 h-9 rounded-full
+      border border-white/20
+      flex items-center justify-center
+      text-white
+      hover:bg-white hover:text-black
+      transition-all duration-300
+    "
+  >
+    {playing ? "❚❚" : "▶"}
+  </button>
 
-        {/* 播放按钮 */}
-        <button
-          onClick={togglePlay}
-          className="
-            w-9 h-9 rounded-full
-            border border-white/30
-            flex items-center justify-center
-            text-white
-            hover:bg-white hover:text-black
-            transition-all duration-300
-          "
-        >
-          {playing ? "❚❚" : "▶"}
-        </button>
-
-        {/* 音量 slider */}
-        <input
-          type="range"
-          min={0}
-          max={1}
-          step={0.01}
-          value={volume}
-          onChange={(e) => setVolume(parseFloat(e.target.value))}
-          className="
-            w-24 accent-white
-            cursor-pointer
-          "
-        />
-      </div>
+  {/* 音量 slider */}
+  <input
+    type="range"
+    min={0}
+    max={1}
+    step={0.01}
+    value={volume}
+    onChange={(e) => setVolume(parseFloat(e.target.value))}
+    className="w-24 accent-white cursor-pointer"
+  />
+</div>
     </>
   );
 }
