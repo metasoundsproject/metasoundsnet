@@ -22,9 +22,7 @@ export const translations = {
       bitVibe: {
         name: 'BitVibe®',
         tagline: 'Essential Pro Gear',
-        description: 'BitVibe® delivers refined, industry-proven audio and PC/gaming peripherals designed for reliability and high performance. From studio-grade speakers and MIDI keyboards to professional electronic gear, BitVibe empowers creators with tools that combine precision and accessibility.',BitVibe® は、業界で実証された高品質なオーディオ＆ゲーミングギアを提供。
-精度と使いやすさを融合させたプロフェッショナルツールで、
-クリエイターの可能性を解き放ちます。
+        description: 'BitVibe® delivers refined, industry-proven audio and PC/gaming peripherals designed for reliability and high performance. From studio-grade speakers and MIDI keyboards to professional electronic gear, BitVibe empowers creators with tools that combine precision and accessibility.',
       },
     },
     products: {
@@ -130,13 +128,12 @@ export const translations = {
     brands: {
       redLabo: {
         name: 'RED LABO®',
-        tagline: 'クリエイティブテックの未来',
-        description: 'RED LABO®はイノベーションハブとして、AI統合型オーディオビジュアルインタラクティブ製品の開発をリードし、テクノロジーと創造的表現の関係性を再構築する。すべてのRED LABO製品は、サウンド、ビジョン、人工知能の境界線を曖昧にするよう設計されている。',
+        tagline: 'RED LABO®は、AIを融合したオーディオビジュアル・インタラクティブ製品を先駆けて開発する実験的イノベーション拠点です。テクノロジーと創造表現の関係を再構築し、すべてのRED LABOのプロダクトは、音・映像・人工知能の境界を曖昧にするよう設計されています。',
       },
       bitVibe: {
         name: 'BitVibe®',
         tagline: 'プロフェッショナルギアの定番',
-        description: 'BitVibe®は、業界で実証済みの高品質オーディオ周辺機器を提供し、信頼性とパフォーマンスを両立させている。スタジオクラスのスピーカー、MIDIキーボードからプロフェッショナルDJ機器に至るまで、BitVibeは精密さと使いやすさを兼ね備えたツールでクリエイターをエンパワーする。',
+        description: 'BitVibe®は、プロ品質のオーディオとPC／ゲーミング機器で、クリエイターの可能性を広げます。',
       },
     },
     products: {
@@ -144,17 +141,17 @@ export const translations = {
       oto: {
         name: 'OTO',
         category: 'AIシンセサイザー',
-        description: 'フラッグシップ級AI駆動型オーディオビジュアルインタラクティブシンセサイザー。適応型タッチセンシティブコントロールとリアルタイムビジュアルフィードバック機能を搭載。',
+        description: 'フラッグシップ級AI駆動型圧力感知アフタータッチ操作とリアルタイムのビジュアルフィードバックを備えた、フラッグシップのAI駆動型オーディオビジュアル・インタラクティブ・シンセサイザー。',
       },
       midi: {
         name: 'MIDI Pro',
         category: 'MIDIコントローラー',
-        description: 'プロフェッショナルコンパクトMIDIキーボード。RGBバックライトキー、カスタマイズ可能なコントロール、プラグアンドプレイ機能を備える。',
+        description: 'DJスタイルのスクラッチ操作を備えた、すぐに使えるプロ仕様のコンパクトMIDIキーボード。',
       },
       sound: {
         name: 'サウンドソリューション',
         category: 'デザイン',
-        description: '最先端エンジニアリングと洗練美学が融合。プロフェッショナルソリューションが、サウンド＆ビジュアルクリエイティビティに明晰さと力を与える。',
+        description: '最先端のエンジニアリングと洗練されたデザインを融合し、音とビジュアルの創造にクリアさと力強さをもたらすプロフェッショナルソリューション。',
       },
     },
     philosophy: {
