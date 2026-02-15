@@ -71,10 +71,19 @@ export default function Brands() {
 
         {/* RED LABO */}
         <div
-          ref={redLaboRef}
-          className="grid lg:grid-cols-2 gap-12 items-center mb-32"
-          style={{ opacity: 0 }}
-        >
+        <div
+  ref={redLaboRef}
+  className="
+    relative
+    grid lg:grid-cols-2 gap-12 items-center mb-32
+    bg-gradient-to-b
+    from-red-50/60
+    to-gray-50
+    rounded-3xl
+    p-12
+  "
+  style={{ opacity: 0 }}
+>
           
 
           
@@ -122,10 +131,18 @@ export default function Brands() {
 
         {/* BitVibe */}
         <div
-          ref={bitVibeRef}
-          className="grid lg:grid-cols-2 gap-12 items-center"
-          style={{ opacity: 0 }}
-        >
+  ref={bitVibeRef}
+  className="
+    relative
+    grid lg:grid-cols-2 gap-12 items-center
+    bg-gradient-to-b
+    from-blue-50/60
+    to-gray-50
+    rounded-3xl
+    p-12
+  "
+  style={{ opacity: 0 }}
+>
           <div className="order-2 lg:order-1 lg:pr-8">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-3 h-3 bg-blue-500 rounded-full" />
