@@ -63,7 +63,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#products" className="text-white/70 hover:text-white transition-colors link-underline">
+                <a href="#hero" className="text-white/70 hover:text-white transition-colors link-underline">
                   {t.nav.products}
                 </a>
               </li>
