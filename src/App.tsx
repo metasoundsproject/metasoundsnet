@@ -8,6 +8,7 @@ import Philosophy from './sections/Philosophy';
 import Footer from './sections/Footer';
 import './App.css';
 import Cursor from "./components/Cursor";
+import MusicPlayer from "./components/MusicPlayer";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Navigation />
         <main>
           <Cursor />
+          <MusicPlayer />
       {/* 你的 routes / sections */}
           <Philosophy />
           
