@@ -24,8 +24,8 @@ function App() {
         <Navigation />
         <main>
           <Philosophy />
-          <Hero />
           <Brands />
+          <Hero />
           <Products />
           
         </main>
