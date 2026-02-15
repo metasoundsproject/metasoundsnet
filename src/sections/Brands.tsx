@@ -77,8 +77,8 @@ export default function Brands() {
     relative
     grid lg:grid-cols-2 gap-12 items-center mb-32
     bg-gradient-to-b
-    from-red-50/60
-    to-gray-50
+    from-gray-50
+    to-red-50/60
     rounded-3xl
     p-12
     
@@ -144,8 +144,8 @@ export default function Brands() {
     relative
     grid lg:grid-cols-2 gap-12 items-center
     bg-gradient-to-b
-    from-blue-50/60
-    to-gray-50
+    from-gray-50
+    to-blue-50/60
     rounded-3xl
     p-12
   "
