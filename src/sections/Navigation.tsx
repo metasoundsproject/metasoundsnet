@@ -52,19 +52,19 @@ export default function Navigation() {
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-6">
             <button
-              onClick={() => goToPage(routes.products)}
+              onClick={() => scrollToSection('products')}
               className="text-sm font-medium link-underline opacity-70 hover:opacity-100 transition-opacity"
             >
               {t.nav.products}
             </button>
             <button
-              onClick={() => goToPage(routes.about)}
+              onClick={() => scrollToSection('brands')}
               className="text-sm font-medium link-underline opacity-70 hover:opacity-100 transition-opacity"
             >
               {t.nav.about}
             </button>
             <button
-              onClick={() => goToPage(routes.support)}
+              onClick={() => scrollToSection('footer')}
               className="text-sm font-medium link-underline opacity-70 hover:opacity-100 transition-opacity"
             >
               {t.nav.support}
