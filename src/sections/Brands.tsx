@@ -153,7 +153,7 @@ export default function Brands() {
               <img
                 src="./bitvibelogo.png"
                 alt="BitVibe"
-                className="w-full h-full object-cover"
+                className="w-1/2 h-1/2 object-cover"
               />
             </div>
             {/* Blue accent */}
