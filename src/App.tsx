@@ -23,10 +23,10 @@ function App() {
       <div className="relative">
         <Navigation />
         <main>
-          <Hero />
           <Philosophy />
-          <Brands />
           
+          <Brands />
+          <Hero />
           <Products />
           
         </main>
