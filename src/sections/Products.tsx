@@ -26,8 +26,8 @@ const products = [
     accent: 'bg-blue-500',
   },
   {
-    id: 'dj',
-    image: './bitvibe-dj.jpg',
+    id: 'sound',
+    image: './sound-system.jpg',
     color: 'from-purple-500/20 to-transparent',
     accent: 'bg-purple-500',
   },
