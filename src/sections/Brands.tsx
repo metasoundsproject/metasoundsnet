@@ -78,7 +78,7 @@ export default function Brands() {
     grid lg:grid-cols-2 gap-12 items-center mb-32
     bg-gradient-to-t
     from-gray-50
-    to-red-30/40
+    to-red-30/30
     rounded-3xl
     p-12
     
