@@ -15,9 +15,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #f5f5f7;
   background-image:
-    linear-gradient(rgba(0,0,0,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.015) 1px, transparent 1px);
-  background-size: 20px 20px;
+    linear-gradient(rgba(0,0,0,0.014) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.014) 1px, transparent 1px);
+  background-size: 22px 22px;
   color: #1d1d1f;
   line-height: 1.5;
   overflow-x: hidden;
@@ -99,7 +99,7 @@ body {
   margin: 0 auto;
 }
 
-/* 章节 */
+/* 章节 - 高级色块区分 */
 .section {
   margin-bottom: 120px;
   opacity: 0;
@@ -108,16 +108,45 @@ body {
 .section.show {
   animation: fadeUp 1s forwards;
 }
+
+.section-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 60px 64px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.section-highlight {
+  background: linear-gradient(135deg, #f9fafb 0%, #f5f7fa 100%);
+  border-radius: 24px;
+  padding: 60px 64px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
 .section h2 {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 28px;
+  color: #1d1d1f;
 }
 .section p {
   font-size: 19px;
   color: #444;
   line-height: 1.7;
   margin-bottom: 18px;
+}
+
+/* 品牌哲学专用样式 */
+.philosophy-main {
+  font-size: 32px;
+  font-weight: 700;
+  color: #007aff;
+  margin-bottom: 12px;
+}
+.philosophy-sub {
+  font-size: 22px;
+  color: #86868b;
+  font-weight: 500;
 }
 
 /* 时间线 */
@@ -182,6 +211,12 @@ body {
   .hero p { font-size: 19px; }
   .section h2 { font-size: 28px; }
   .section p { font-size: 17px; }
+  .section-card, .section-highlight {
+    padding: 40px 32px;
+  }
+  .philosophy-main {
+    font-size: 26px;
+  }
   .floating-nav { gap: 12px; }
 }
 </style>
@@ -209,39 +244,47 @@ body {
   </div>
 
   <div class="section">
-    <h2>About MetaSounds</h2>
-    <p>Founded in 2024, MetaSounds is an innovative music technology company driven by artificial intelligence. We design and build next‑generation smart instruments, professional audio equipment, creator PCs, and premium gaming peripherals.</p>
-    <p>Our mission is to break down technical barriers and empower everyone to create, perform, and experience sound in smarter, more intuitive ways.</p>
+    <div class="section-card">
+      <h2>About MetaSounds</h2>
+      <p>Founded in 2024, MetaSounds is an innovative music technology company driven by artificial intelligence. We design and build next‑generation smart instruments, professional audio equipment, creator PCs, and premium gaming peripherals.</p>
+      <p>Our mission is to break down technical barriers and empower everyone to create, perform, and experience sound in smarter, more intuitive ways.</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>Our Vision & Background</h2>
-    <p>As AI and digital creation continue to reshape the world, traditional tools for music, production, and gaming remain complex, rigid, and inaccessible to many.</p>
-    <p>MetaSounds was born to change this. We combine cutting‑edge AI, minimalist design, and professional‑grade performance to create tools that feel natural, powerful, and built for the future.</p>
+    <div class="section-highlight">
+      <h2>Our Vision & Background</h2>
+      <p>As AI and digital creation continue to reshape the world, traditional tools for music, production, and gaming remain complex, rigid, and inaccessible to many.</p>
+      <p>MetaSounds was born to change this. We combine cutting‑edge AI, minimalist design, and professional‑grade performance to create tools that feel natural, powerful, and built for the future.</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>Milestones</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>2024 · Founded</h3>
-        <p>MetaSounds established with a vision to redefine music and audio technology through AI.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2025 · Core Technology</h3>
-        <p>Development of proprietary AI audio engine and smart instrument systems.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2026 · Global Launch</h3>
-        <p>Official release of flagship smart instruments, audio gear, and creator products worldwide.</p>
+    <div class="section-card">
+      <h2>Milestones</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2024 · Founded</h3>
+          <p>MetaSounds established with a vision to redefine music and audio technology through AI.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · Core Technology</h3>
+          <p>Development of proprietary AI audio engine and smart instrument systems.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2026 · Global Launch</h3>
+          <p>Official release of flagship smart instruments, audio gear, and creator products worldwide.</p>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>Brand Philosophy</h2>
-    <p>Intelligence · Simplicity · Innovation · Craftsmanship.</p>
-    <p>At MetaSounds, we believe technology should enhance creativity, not complicate it. We continue to push the boundaries of sound, design, and intelligence to build the future of music and creation.</p>
+    <div class="section-highlight">
+      <h2>Brand Philosophy</h2>
+      <p class="philosophy-main">Creativity Without Boundaries</p>
+      <p class="philosophy-sub">Think Brilliant, Work Smart</p>
+    </div>
   </div>
 </div>
 
@@ -253,39 +296,47 @@ body {
   </div>
 
   <div class="section">
-    <h2>关于 MetaSounds</h2>
-    <p>MetaSounds 创立于 2024 年，是一家以人工智能为核心的音乐科技创新公司。我们专注研发下一代智能乐器、专业音频设备、创作电脑与高端游戏外设。</p>
-    <p>我们致力于打破技术门槛，让每个人都能用更智能、更简单的方式创作、演奏与感受声音。</p>
+    <div class="section-card">
+      <h2>关于 MetaSounds</h2>
+      <p>MetaSounds 创立于 2024 年，是一家以人工智能为核心的音乐科技创新公司。我们专注研发下一代智能乐器、专业音频设备、创作电脑与高端游戏外设。</p>
+      <p>我们致力于打破技术门槛，让每个人都能用更智能、更简单的方式创作、演奏与感受声音。</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>创立背景与理念</h2>
-    <p>在 AI 与数字创作重塑世界的今天，传统音乐、制作与游戏设备依然复杂、笨重，难以普及。</p>
-    <p>MetaSounds 应运而生。我们将前沿人工智能、极简设计与专业级性能融合，打造自然、强大、面向未来的创作工具。</p>
+    <div class="section-highlight">
+      <h2>创立背景与理念</h2>
+      <p>在 AI 与数字创作重塑世界的今天，传统音乐、制作与游戏设备依然复杂、笨重，难以普及。</p>
+      <p>MetaSounds 应运而生。我们将前沿人工智能、极简设计与专业级性能融合，打造自然、强大、面向未来的创作工具。</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>发展历程</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>2024 · 品牌成立</h3>
-        <p>MetaSounds 正式创立，以 AI 重新定义音乐与音频科技。</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2025 · 技术研发</h3>
-        <p>完成自研 AI 音频引擎与智能乐器系统开发。</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2026 · 全球发布</h3>
-        <p>旗舰智能乐器、音频设备与创作产品全球正式上市。</p>
+    <div class="section-card">
+      <h2>发展历程</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2024 · 品牌成立</h3>
+          <p>MetaSounds 正式创立，以 AI 重新定义音乐与音频科技。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · 技术研发</h3>
+          <p>完成自研 AI 音频引擎与智能乐器系统开发。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2026 · 全球发布</h3>
+          <p>旗舰智能乐器、音频设备与创作产品全球正式上市。</p>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>品牌理念</h2>
-    <p>智能 · 简约 · 创新 · 匠心。</p>
-    <p>MetaSounds 相信，科技应赋能创作，而非增加复杂度。我们持续探索声音、设计与智能的边界，构建音乐与创作的未来。</p>
+    <div class="section-highlight">
+      <h2>品牌理念</h2>
+      <p class="philosophy-main">创意无界</p>
+      <p class="philosophy-sub">思以慧达，业以敏成</p>
+    </div>
   </div>
 </div>
 
@@ -297,39 +348,47 @@ body {
   </div>
 
   <div class="section">
-    <h2>MetaSounds について</h2>
-    <p>2024年設立のMetaSoundsは、AIを中核とする音楽テクノロジーのイノベーティブカンパニーです。次世代スマート楽器、プロフェッショナルオーディオ機器、クリエイター向けPC、高品質ゲーミング周辺機器を開発しています。</p>
-    <p>技術的な障壁を取り払い、誰もがよりスマートで直感的に音楽を創作、演奏、体感できる世界を目指しています。</p>
+    <div class="section-card">
+      <h2>MetaSounds について</h2>
+      <p>2024年設立のMetaSoundsは、AIを中核とする音楽テクノロジーのイノベーティブカンパニーです。次世代スマート楽器、プロフェッショナルオーディオ機器、クリエイター向けPC、高品質ゲーミング周辺機器を開発しています。</p>
+      <p>技術的な障壁を取り払い、誰もがよりスマートで直感的に音楽を創作、演奏、体感できる世界を目指しています。</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>設立の背景とビジョン</h2>
-    <p>AIとデジタルクリエイションが世界を変革する現在でも、従来の音楽・制作・ゲーム機器は複雑で扱いにくく、多くの人にとって敷居が高いままです。</p>
-    <p>MetaSoundsはこの状況を変えるために生まれました。最先端AI、ミニマルデザイン、プロ仕様のパフォーマンスを融合させ、自然でパワフルな未来型ツールを創出します。</p>
+    <div class="section-highlight">
+      <h2>設立の背景とビジョン</h2>
+      <p>AIとデジタルクリエイションが世界を変革する現在でも、従来の音楽・制作・ゲーム機器は複雑で扱いにくく、多くの人にとって敷居が高いままです。</p>
+      <p>MetaSoundsはこの状況を変えるために生まれました。最先端AI、ミニマルデザイン、プロ仕様のパフォーマンスを融合させ、自然でパワフルな未来型ツールを創出します。</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>マイルストーン</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>2024 · 設立</h3>
-        <p>AIによる音楽とオーディオ技術を再定義するビジョンのもとMetaSounds設立。</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2025 · 基盤技術開発</h3>
-        <p>独自開発AIオーディオエンジン・スマート楽器システムの開発を完了。</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2026 · グローバルローンチ</h3>
-        <p>フラッグシップスマート楽器・オーディオ製品・クリエイター向け製品を世界で発売。</p>
+    <div class="section-card">
+      <h2>マイルストーン</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2024 · 設立</h3>
+          <p>AIによる音楽とオーディオ技術を再定義するビジョンのもとMetaSounds設立。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · 基盤技術開発</h3>
+          <p>独自開発AIオーディオエンジン・スマート楽器システムの開発を完了。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2026 · グローバルローンチ</h3>
+          <p>フラッグシップスマート楽器・オーディオ製品・クリエイター向け製品を世界で発売。</p>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>ブランドポリシー</h2>
-    <p>インテリジェンス・シンプリシティ・イノベーション・クラフトマンシップ。</p>
-    <p>MetaSoundsは、テクノロジーが創造性を高めるものであって、複雑にするものであってはならないと考えます。音とデザインとインテリジェンスの限界を拓き、音楽とクリエイションの未来をつくります。</p>
+    <div class="section-highlight">
+      <h2>ブランドポリシー</h2>
+      <p class="philosophy-main">創造に、境界線はない</p>
+      <p class="philosophy-sub">卓越に思考し、スマートに創る</p>
+    </div>
   </div>
 </div>
 
@@ -341,39 +400,47 @@ body {
   </div>
 
   <div class="section">
-    <h2>MetaSounds 소개</h2>
-    <p>2024년 설립된 MetaSounds는 인공지능을 중심으로 하는 혁신적인 음악 테크놀로지 기업입니다. 차세대 스마트 악기, 전문 오디오 장비, 크리에이터용 PC, 프리미엄 게이밍 기기를 연구 개발합니다.</p>
-    <p>기술적 장벽을 허물고, 누구나 더 스마트하고 직관적인 방식으로 음악을 만들고 연주하며 경험할 수 있도록 하는 것이 우리의 mission입니다.</p>
+    <div class="section-card">
+      <h2>MetaSounds 소개</h2>
+      <p>2024년 설립된 MetaSounds는 인공지능을 중심으로 하는 혁신적인 음악 테크놀로지 기업입니다. 차세대 스마트 악기, 전문 오디오 장비, 크리에이터용 PC, 프리미엄 게이밍 기기를 연구 개발합니다.</p>
+      <p>기술적 장벽을 허물고, 누구나 더 스마트하고 직관적인 방식으로 음악을 만들고 연주하며 경험할 수 있도록 하는 것이 우리의 mission입니다.</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>설립 배경과 비전</h2>
-    <p>AI와 디지털 크리에이션이 세상을 바꾸고 있는 현재에도, 전통적인 음악·제작·게이밍 기기는 여전히 복잡하고 접근성이 낮습니다.</p>
-    <p>MetaSounds는 이를 변화시키기 위해 탄생했습니다. 최첨단 AI, 미니멀 디자인, 프로급 성능을 결합해 자연스럽고 강력한 미래형 도구를 만듭니다.</p>
+    <div class="section-highlight">
+      <h2>설립 배경과 비전</h2>
+      <p>AI와 디지털 크리에이션이 세상을 바꾸고 있는 현재에도, 전통적인 음악·제작·게이밍 기기는 여전히 복잡하고 접근성이 낮습니다.</p>
+      <p>MetaSounds는 이를 변화시키기 위해 탄생했습니다. 최첨단 AI, 미니멀 디자인, 프로급 성능을 결합해 자연스럽고 강력한 미래형 도구를 만듭니다.</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>주요 성과</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>2024 · 설립</h3>
-        <p>AI를 통해 음악과 오디오 기술을 재정의하는 비전으로 MetaSounds 설립.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2025 · 핵심 기술 개발</h3>
-        <p>자체 개발 AI 오디오 엔진 및 스마트 악기 시스템 개발 완료.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>2026 · 글로벌 론칭</h3>
-        <p>플래그십 스마트 악기, 오디오 기기, 크리에이터 제품을 전 세계에 공식 출시.</p>
+    <div class="section-card">
+      <h2>주요 성과</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2024 · 설립</h3>
+          <p>AI를 통해 음악과 오디오 기술을 재정의하는 비전으로 MetaSounds 설립.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025 · 핵심 기술 개발</h3>
+          <p>자체 개발 AI 오디오 엔진 및 스마트 악기 시스템 개발 완료.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2026 · 글로벌 론칭</h3>
+          <p>플래그십 스마트 악기, 오디오 기기, 크리에이터 제품을 전 세계에 공식 출시.</p>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>브랜드 철학</h2>
-    <p>지능 · 심플함 · 혁신 · 장인정신.</p>
-    <p>MetaSounds는 기술이 창의성을 높이는 것이지 복잡하게 만들어서는 안 된다고 믿습니다. 소리와 디자인, 지능의 경계를 끊임없이 넓혀 음악과 크리에이션의 미래를 만들어 갑니다.</p>
+    <div class="section-highlight">
+      <h2>브랜드 철학</h2>
+      <p class="philosophy-main">경계 없는 창의성</p>
+      <p class="philosophy-sub">뛰어나게 사고하고, 스마트하게 창조하다</p>
+    </div>
   </div>
 </div>
 
