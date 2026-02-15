@@ -1,183 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy</title>
 
-  <style>
-    :root {
-      --bg: #0a0a0a;
-      --text: #f5f5f5;
-      --muted: #999;
-      --accent: #ffffff;
-      --max-width: 900px;
-    }
+<style>
+:root {
+  --bg: #000000;
+  --text-primary: #f2f2f2;
+  --text-secondary: #cfcfcf;
+  --text-muted: #888888;
+  --border: #1a1a1a;
+  --accent: #ffffff;
+  --max-width: 900px;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      <a href="/index.html">← Back to MetaSounds</a>
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   Helvetica, Arial, sans-serif;
-      line-height: 1.7;
-      letter-spacing: 0.2px;
-    }
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+  -webkit-font-smoothing: antialiased;
+}
 
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 80px 24px;
-    }
+/* Back button */
 
-    h1 {
-      font-size: 48px;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
+.home-button {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.2s ease;
+}
 
-    .last-updated {
-      color: var(--muted);
-      margin-bottom: 48px;
-      font-size: 14px;
-    }
+.home-button:hover {
+  border-bottom-color: #fff;
+  opacity: 0.7;
+}
 
-    h2 {
-      font-size: 22px;
-      margin-top: 40px;
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
+/* Layout */
 
-    p {
-      margin-bottom: 14px;
-      color: #ddd;
-    }
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 100px 24px 80px;
+}
 
-    ul {
-      margin: 12px 0 12px 20px;
-      color: #ddd;
-    }
+/* Typography */
 
-    li {
-      margin-bottom: 8px;
-    }
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
 
-    a {
-      color: var(--accent);
-      text-decoration: underline;
-    }
+.last-updated {
+  color: var(--text-muted);
+  margin-bottom: 48px;
+  font-size: 14px;
+}
 
-    footer {
-      margin-top: 80px;
-      padding-top: 32px;
-      border-top: 1px solid #222;
-      color: var(--muted);
-      font-size: 14px;
-    }
+h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 36px;
-      }
+p {
+  margin-bottom: 14px;
+  color: var(--text-secondary);
+}
 
-      h2 {
-        font-size: 20px;
-      }
+ul {
+  margin: 12px 0 12px 20px;
+  color: var(--text-secondary);
+}
 
-      .container {
-        padding: 48px 20px;
-      }
-    }
-  </style>
+li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+a:hover {
+  border-bottom-color: #fff;
+  opacity: 0.7;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 80px 20px 60px;
+  }
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: January 1, 2026</p>
+<a href="/index.html" class="home-button">← Back to MetaSounds</a>
 
-    <p>
-      This Privacy Policy explains how we collect, use, disclose, and safeguard
-      your information when you visit our website and use our services.
-      We are committed to protecting your personal data and respecting your privacy.
-    </p>
+<div class="container">
 
-    <h2>1. Information We Collect</h2>
-    <p>We may collect the following types of information:</p>
-    <ul>
-      <li>
-        <strong>Personal Information:</strong> Name, email address, and contact details
-        you voluntarily provide.
-      </li>
-      <li>
-        <strong>Usage Data:</strong> Information about how you access and use the website,
-        including IP address, browser type, and interaction data.
-      </li>
-      <li>
-        <strong>Cookies and Tracking Technologies:</strong> We use cookies and similar
-        technologies to improve functionality and user experience.
-      </li>
-    </ul>
+<h1>Privacy Policy</h1>
+<p class="last-updated">Last updated: January 1, 2026</p>
 
-    <h2>2. How We Use Your Information</h2>
-    <p>We use collected information to:</p>
-    <ul>
-      <li>Provide and maintain our services</li>
-      <li>Improve website performance and user experience</li>
-      <li>Communicate with you regarding updates or inquiries</li>
-      <li>Comply with legal obligations</li>
-    </ul>
+<p>
+This Privacy Policy explains how we collect, use, disclose, and safeguard
+your information when you visit our website and use our services.
+We are committed to protecting your personal data and respecting your privacy.
+</p>
 
-    <h2>3. Sharing of Information</h2>
-    <p>
-      We do not sell your personal information. We may share information with trusted
-      service providers who assist in operating our website, or when required by law.
-    </p>
+<h2>1. Information We Collect</h2>
+<p>We may collect the following types of information:</p>
+<ul>
+<li><strong>Personal Information:</strong> Name, email address, and contact details you voluntarily provide.</li>
+<li><strong>Usage Data:</strong> Information about how you access and use the website, including IP address, browser type, and interaction data.</li>
+<li><strong>Cookies and Tracking Technologies:</strong> We use cookies and similar technologies to improve functionality and user experience.</li>
+</ul>
 
-    <h2>4. Data Security</h2>
-    <p>
-      We implement reasonable administrative and technical safeguards to protect
-      your personal information. However, no method of transmission over the internet
-      is completely secure.
-    </p>
+<h2>2. How We Use Your Information</h2>
+<p>We use collected information to:</p>
+<ul>
+<li>Provide and maintain our services</li>
+<li>Improve website performance and user experience</li>
+<li>Communicate with you regarding updates or inquiries</li>
+<li>Comply with legal obligations</li>
+</ul>
 
-    <h2>5. Your Privacy Rights</h2>
-    <p>
-      Depending on your jurisdiction, you may have the right to access, correct,
-      or delete your personal data. You may contact us to exercise these rights.
-    </p>
+<h2>3. Sharing of Information</h2>
+<p>
+We do not sell your personal information. We may share information with trusted
+service providers who assist in operating our website, or when required by law.
+</p>
 
-    <h2>6. Third-Party Links</h2>
-    <p>
-      Our website may contain links to third-party sites. We are not responsible
-      for their privacy practices or content.
-    </p>
+<h2>4. Data Security</h2>
+<p>
+We implement reasonable administrative and technical safeguards to protect
+your personal information. However, no method of transmission over the internet
+is completely secure.
+</p>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time. Updates will be posted
-      on this page with a revised date.
-    </p>
+<h2>5. Your Privacy Rights</h2>
+<p>
+Depending on your jurisdiction, you may have the right to access, correct,
+or delete your personal data. You may contact us to exercise these rights.
+</p>
 
-    <h2>8. Contact Us</h2>
-    <p>
-      If you have questions about this Privacy Policy, you may contact us at:
-      <br/>
-      Email: <a href="mailto:contact@metasounds.net">contact@metasounds.net</a>
-    </p>
+<h2>6. Third-Party Links</h2>
+<p>
+Our website may contain links to third-party sites. We are not responsible
+for their privacy practices or content.
+</p>
 
-    <footer>
-      © 2026 MetaSounds. All rights reserved.
-    </footer>
+<h2>7. Changes to This Policy</h2>
+<p>
+We may update this Privacy Policy from time to time. Updates will be posted
+on this page with a revised date.
+</p>
 
-  </div>
+<h2>8. Contact Us</h2>
+<p>
+If you have questions about this Privacy Policy, you may contact us at:<br/>
+Email: <a href="mailto:contact@metasounds.net">contact@metasounds.net</a>
+</p>
+
+<footer>
+© 2026 MetaSounds. All rights reserved.
+</footer>
+
+</div>
+
 </body>
 </html>
