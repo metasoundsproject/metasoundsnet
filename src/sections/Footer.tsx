@@ -111,8 +111,7 @@ export default function Footer() {
               {t.footer.copyright}
             </p>
             <div className="flex items-center gap-6">
-              //<span className="font-mono text-xs text-white/30">
-              //  RED LABO
+
               <a
                 href="https://www.redlabo.com"
                 className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
@@ -122,9 +121,7 @@ export default function Footer() {
               </a>
               </span>
               <span className="w-1 h-1 bg-white/30 rounded-full" />
-              //<span className="font-mono text-xs text-white/30">
-              //  BitVibe
-              // </span>
+
               <a
                 href="https://www.bitvibe.jp"
                 className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
