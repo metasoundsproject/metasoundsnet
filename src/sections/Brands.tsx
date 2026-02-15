@@ -77,11 +77,7 @@ export default function Brands() {
         >
           <div className="relative">
            {/* <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden"> */}
-            <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center 
-              bg-red-500/5  /* 基础红色底色，降低透明度 */
-              [background-image:linear-gradient(to_right,#f8717120_1px,transparent_1px),linear-gradient(to_bottom,#f8717120_1px,transparent_1px)] 
-              [background-size:24px_24px] /* 格子大小，可调整 */
-            ">
+            <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
