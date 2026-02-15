@@ -73,7 +73,7 @@ export const translations = {
       redLabo: {
         name: 'RED LABO®',
         tagline: '创意科技的未来',
-        description: 'RED LABO® 作为实验性的创新枢纽，率先研发AI融合型音视交互产品，重新构建科技与创意表达的联结。每一款RED LABO产品均以打破声音、视觉与人工智能的边界为设计核心。',
+        description: 'RED LABO® 作为实验性的创新枢纽，专注研发AI融合型音视交互产品，重新构建科技与创意表达的联结。每一款RED LABO产品均以打破声音、视觉与人工智能的边界为设计核心。',
       },
       bitVibe: {
         name: 'BitVibe®',
