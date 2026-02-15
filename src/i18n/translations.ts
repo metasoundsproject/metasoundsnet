@@ -54,7 +54,7 @@ export const translations = {
       address: 'Tokyo, Japan',
       links: 'Links',
       follow: 'Follow Us',
-      copyright: '© 2024 MetaSounds. All rights reserved.',
+      copyright: '© 2026 MetaSounds. All rights reserved.',
     },
   },
   zh: {
@@ -110,7 +110,7 @@ export const translations = {
       address: '日本东京',
       links: '链接',
       follow: '关注我们',
-      copyright: '© 2024 MetaSounds. 保留所有权利。',
+      copyright: '© 2026 MetaSounds. 保留所有权利。',
     },
   },
  ja: {
@@ -166,7 +166,7 @@ export const translations = {
       address: '東京都',
       links: 'リンク',
       follow: 'フォロー',
-      copyright: '© 2024 MetaSounds. 全著作権所有。',
+      copyright: '© 2026 MetaSounds. 全著作権所有。',
     },
   },
   ko: {
@@ -222,7 +222,7 @@ export const translations = {
       address: '일본 도쿄',
       links: '유용한 링크',
       follow: '팔로우',
-      copyright: '© 2024 MetaSounds. 모든 권리 보유.',
+      copyright: '© 2026 MetaSounds. 모든 권리 보유.',
     },
   },
 };
