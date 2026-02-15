@@ -79,8 +79,8 @@ export default function Brands() {
             <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden">
               <img
                 src="./redlabologo.png"
-                alt="RED LABO OTO"
-                className="w-full h-full object-cover"
+                alt="RED LABO"
+                className="w-1/2 h-1/2 object-cover"
               />
             </div>
             {/* Red accent */}
