@@ -33,19 +33,19 @@ export const translations = {
         description: 'Flagship AI-driven audio-visual interactive synthesizer with adaptive touch-sensitive controls and real-time visual feedback.',
       },
       midi: {
-        name: 'BitVibe MIDI Pro',
+        name: 'MIDI Pro',
         category: 'MIDI Controller',
         description: 'Professional compact MIDI keyboard with RGB backlit keys, customizable controls, and plug-and-play functionality.',
       },
-      dj: {
-        name: 'BitVibe Scratch X',
-        category: 'DJ Controller',
-        description: 'High-performance portable scratch controller with responsive jog wheel, RGB performance pads, and seamless software integration.',
+      sound: {
+        name: 'Sound System',
+        category: 'Design',
+        description: 'Professional solutions combine cutting-edge engineering with sleek aesthetics, bringing clarity and power to your sound and visual creativity.',
       },
     },
     philosophy: {
       title: 'Creativity Without Boundaries',
-      subtitle: 'Invents the future, perfects the present.',
+      subtitle: 'Think Brilliant',
     },
     footer: {
       contact: 'Contact',
@@ -65,76 +65,76 @@ export const translations = {
     },
     hero: {
       title: 'OTO',
-      subtitle: 'AI赋能音视交互合成器',
-      description: '用 OTO 重新定义创意表达——AI、触控与动态感应深度融合，打造沉浸式音视体验，突破音乐创作的边界。',
-      cta: '探索 OTO',
+      subtitle: 'AI智能音视交互合成器',
+      description: '以OTO重新定义创意表达——融合AI、触控与动态感应技术，打造沉浸式音视体验，突破音乐与视觉创作的边界。',
+      cta: '探索OTO',
     },
     brands: {
       redLabo: {
         name: 'RED LABO®',
         tagline: '创意科技的未来',
-        description: 'RED LABO® 专注研发融合 AI 的音视交互产品，重新构想科技与创意表达的关系。每一款 RED LABO 产品都致力于打破声音、视觉与人工智能的边界。',
+        description: 'RED LABO® 作为创新核心枢纽，率先研发AI融合型音视交互产品，重新构建科技与创意表达的联结。每一款RED LABO产品均以打破声音、视觉与人工智能的边界为设计核心。',
       },
       bitVibe: {
         name: 'BitVibe®',
         tagline: '专业级核心装备',
-        description: 'BitVibe® 专注打造成熟可靠、性能卓越的音频外设。从专业级监听音箱、MIDI 键盘到 DJ 专业设备，BitVibe 以精准与易用兼具的工具赋能创作者。',
+        description: 'BitVibe® 提供经行业验证、工艺精湛的音频外设产品，兼具可靠性与卓越性能。从工作室级监听音箱、MIDI键盘到专业DJ设备，BitVibe以精准易用的工具赋能创作者。',
       },
     },
     products: {
-      title: '我们的产品',
+      title: '产品生态体系',
       oto: {
         name: 'OTO',
         category: 'AI合成器',
-        description: '旗舰级 AI 驱动音视交互合成器，搭载压感及触后操控与实时视觉反馈系统。',
+        description: '旗舰级AI驱动音视交互合成器，搭载自适应触控感应操控系统及实时视觉反馈功能。',
       },
       midi: {
-        name: 'BitVibe MIDI',
-        category: 'MIDI 控制器',
-        description: '专业级紧凑型 MIDI 键盘，配备 RGB 背光按键、可自定义操控界面及即插即用功能。',
+        name: 'MIDI Pro',
+        category: 'MIDI控制器',
+        description: '专业级紧凑型MIDI键盘，配备RGB背光按键、可自定义操控界面及即插即用功能。',
       },
-      dj: {
-        name: 'BitVibe Scratch X',
-        category: 'DJ 控制器',
-        description: '高性能便携式搓盘控制器，内置高响应转盘、RGB 表演打击垫，支持无缝软件集成。',
+      sound: {
+        name: '专业音响系统',
+        category: '定制化设计',
+        description: '专业级解决方案融合前沿工程技术与简约美学设计，为您的声音及视觉创意赋予清晰质感与澎湃动力。',
       },
     },
     philosophy: {
       title: '创意无界',
-      subtitle: '开创未来，深耕当下。',
+      subtitle: '智启非凡',
     },
     footer: {
       contact: '联系我们',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: '日本东京',
-      links: '链接',
+      address: '日本·东京',
+      links: '相关链接',
       follow: '关注我们',
       copyright: '© 2026 MetaSounds. 保留所有权利。',
     },
   },
- ja: {
+  ja: {
     nav: {
-      products: '製品',
+      products: '製品エコシステム',
       about: '会社概要',
-      support: 'サポート',
+      support: 'サポートサービス',
     },
     hero: {
       title: 'OTO',
-      subtitle: 'AI駆動型音響映像インタラクティブシンセサイザー',
-      description: 'OTOで創造的表現を再定義せよ。AI、タッチ、モーションが融合し、音楽制作の限界を超える没入型音響映像体験を生み出す。',
-      cta: '創造力を解き放て',
+      subtitle: 'AI駆動型オーディオビジュアルインタラクティブシンセサイザー',
+      description: 'OTOで創造的表現を再定義せよ。AI、タッチ、モーションが融合し、音楽とビジュアルクリエイションの限界を超える没入型オーディオビジュアル体験を創出する。',
+      cta: 'OTOを探索する',
     },
     brands: {
       redLabo: {
         name: 'RED LABO®',
         tagline: 'クリエイティブテックの未来',
-        description: 'RED LABO®はイノベーション拠点であり、AI統合型音響映像インタラクティブ製品を開発し、テクノロジーと創造的表現の関係性を再構築している。RED LABOの製品は、音、映像、人工知能の境界をなくすことを目指している。',
+        description: 'RED LABO®はイノベーションハブとして、AI統合型オーディオビジュアルインタラクティブ製品の開発をリードし、テクノロジーと創造的表現の関係性を再構築する。すべてのRED LABO製品は、サウンド、ビジョン、人工知能の境界線を曖昧にするよう設計されている。',
       },
       bitVibe: {
         name: 'BitVibe®',
-        tagline: 'プロフェッショナルギア',
-        description: 'BitVibe®は信頼性とパフォーマンスに優れた完成度の高いオーディオ周辺機器を提供する。スタジオクラスのスピーカー、MIDIキーボードからプロフェッショナルDJ機器まで、BitVibeは精度と使いやすさを兼ね備えたツールでクリエイターをサポートする。',
+        tagline: 'プロフェッショナルギアの定番',
+        description: 'BitVibe®は、業界で実証済みの高品質オーディオ周辺機器を提供し、信頼性とパフォーマンスを両立させている。スタジオクラスのスピーカー、MIDIキーボードからプロフェッショナルDJ機器に至るまで、BitVibeは精密さと使いやすさを兼ね備えたツールでクリエイターをエンパワーする。',
       },
     },
     products: {
@@ -142,55 +142,55 @@ export const translations = {
       oto: {
         name: 'OTO',
         category: 'AIシンセサイザー',
-        description: 'フラッグシップ級AI駆動型音響映像インタラクティブシンセサイザー。適応型タッチセンシティブコントロールとリアルタイムビジュアルフィードバックを搭載。',
+        description: 'フラッグシップ級AI駆動型オーディオビジュアルインタラクティブシンセサイザー。適応型タッチセンシティブコントロールとリアルタイムビジュアルフィードバック機能を搭載。',
       },
       midi: {
-        name: 'BitVibe MIDI Pro',
+        name: 'MIDI Pro',
         category: 'MIDIコントローラー',
         description: 'プロフェッショナルコンパクトMIDIキーボード。RGBバックライトキー、カスタマイズ可能なコントロール、プラグアンドプレイ機能を備える。',
       },
-      dj: {
-        name: 'BitVibe Scratch X',
-        category: 'DJコントローラー',
-        description: 'ハイパフォーマンスポータブルスクラッチコントローラー。レスポンシブジョグホイール、16個のRGBパフォーマンスパッド、シームレスなソフトウェア統合を特徴とする。',
-      }
+      sound: {
+        name: 'サウンドシステム',
+        category: 'デザインソリューション',
+        description: 'プロフェッショナルソリューションは先進的なエンジニアリングと洗練された美学を融合し、サウンドとビジュアルクリエイティビティにクラリティとパワーをもたらす。',
+      },
     },
     philosophy: {
-      title: '創造性に境界はない',
-      subtitle: '未来を創造し、現在を磨く。',
+      title: '境界のない創造性',
+      subtitle: '卓越な思考',
     },
     footer: {
       contact: 'お問い合わせ',
       email: 'contact@metasounds.net',
       phone: '+81-080-3398-1211',
-      address: '東京都',
-      links: 'リンク',
+      address: '日本 東京都',
+      links: 'リンク集',
       follow: 'フォロー',
       copyright: '© 2026 MetaSounds. 全著作権所有。',
     },
   },
   ko: {
     nav: {
-      products: '제품',
+      products: '제품 생태계',
       about: '회사 소개',
-      support: '고객 지원',
+      support: '고객 지원 서비스',
     },
     hero: {
       title: 'OTO',
       subtitle: 'AI 기반 오디오-비주얼 인터랙티브 신시사이저',
-      description: 'OTO로 창의적 표현을 재정의하세요. AI, 터치, 모션이 융합되어 음악 창작의 경계를 넘어선 몰입형 오디오-비주얼 경험을 선사합니다.',
-      cta: '창의력을 펼쳐보세요',
+      description: 'OTO로 창의적 표현을 재정의하세요. AI, 터치, 모션이 융합되어 음악과 비주얼 창작의 경계를 넘어선 몰입형 오디오-비주얼 경험을 선사합니다.',
+      cta: 'OTO 탐색하기',
     },
     brands: {
       redLabo: {
         name: 'RED LABO®',
         tagline: '크리에이티브 테크의 미래',
-        description: 'RED LABO®는 AI가 통합된 오디오-비주얼 인터랙티브 제품을 선도하는 전위적 혁신 허브로, 기술과 창의적 표현의 관계를 재구상합니다. 모든 RED LABO 제품은 사운드, 비전, 인공지능의 경계를 허물기 위해 설계되었습니다.',
+        description: 'RED LABO®는 혁신 허브로서 AI 통합형 오디오-비주얼 인터랙티브 제품 개발을 선도하며, 기술과 창의적 표현의 관계를 재구상합니다. 모든 RED LABO 제품은 사운드, 비전, 인공지능의 경계를 허물도록 설계되었습니다.',
       },
       bitVibe: {
         name: 'BitVibe®',
-        tagline: '프로페셔널 기본 장비',
-        description: 'BitVibe®는 프리미엄 보조 라인으로, 신뢰성과 성능이 입증된 완성도 높은 오디오 주변기기를 제공합니다. 스튜디오급 스피커, MIDI 키보드부터 전문 DJ 장비까지, BitVibe는 정밀성과 접근성을 결합한 도구로 크리에이터를 지원합니다.',
+        tagline: '핵심 프로 기어',
+        description: 'BitVibe®는 업계 검증된 정교한 오디오 주변기기를 제공하며, 신뢰성과 성능을 모두 갖추고 있습니다. 스튜디오급 스피커, MIDI 키보드부터 전문 DJ 장비까지, BitVibe는 정밀성과 접근성을 결합한 도구로 크리에이터를 역량 강화시킵니다.',
       },
     },
     products: {
@@ -198,22 +198,22 @@ export const translations = {
       oto: {
         name: 'OTO',
         category: 'AI 신시사이저',
-        description: '플래그십 AI 기반 오디오-비주얼 인터랙티브 신시사이저로, 적응형 터치 감응 컨트롤과 실시간 비주얼 피드백을 탑재합니다.',
+        description: '플래그십 AI 기반 오디오-비주얼 인터랙티브 신시사이저로, 적응형 터치 감응 컨트롤과 실시간 비주얼 피드백 기능을 탑재합니다.',
       },
       midi: {
-        name: 'BitVibe MIDI Pro',
+        name: 'MIDI Pro',
         category: 'MIDI 컨트롤러',
         description: '프로페셔널 컴팩트 MIDI 키보드로, RGB 백라이트 키, 맞춤형 컨트롤, 플러그 앤 플레이 기능을 제공합니다.',
       },
-      dj: {
-        name: 'BitVibe Scratch X',
-        category: 'DJ 컨트롤러',
-        description: '고성능 휴대용 스크래치 컨트롤러로, 고응답 조그휠, 16개의 RGB 퍼포먼스 패드, 원활한 소프트웨어 통합을 특징으로 합니다.',
-      }
+      sound: {
+        name: '사운드 시스템',
+        category: '디자인 솔루션',
+        description: '프로페셔널 솔루션은 최첨단 엔지니어링과 세련된 미학을 결합하여, 사운드와 비주얼 창의성에 선명도와 파워를 더합니다.',
+      },
     },
     philosophy: {
       title: '경계 없는 창의성',
-      subtitle: '미래를 발명하고, 현재를 완성합니다.',
+      subtitle: '뛰어난 사고',
     },
     footer: {
       contact: '연락처',
