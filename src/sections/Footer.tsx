@@ -23,7 +23,7 @@ export default function Footer() {
   {/* main badge */}
   <div className="relative bg-white/10 border border-white/20 rounded-lg px-4 py-2 backdrop-blur-sm transition-all duration-300 group-hover:bg-white/15 group-hover:-translate-y-0.5">
     <p className="text-white/90 text-sm tracking-wide">
-      One-Year Warranty · 30-Day Returns · Free Worldwide Shipping
+      1-Year Warranty · 30-Day Returns · Free Worldwide Shipping
     </p>
   </div>
 </div>
@@ -129,7 +129,7 @@ export default function Footer() {
 
               <a
                 href="https://www.redlabo.com"
-                className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
+                className="font-mono text-s text-white/30 hover:text-white/80 transition-colors duration-200"
                 target="_blank"  
               >
                 RED LABO
@@ -139,7 +139,7 @@ export default function Footer() {
 
               <a
                 href="https://www.bitvibe.jp"
-                className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
+                className="font-mono text-s text-white/30 hover:text-white/80 transition-colors duration-200"
                 target="_blank"  
               >
                 BitVibe
