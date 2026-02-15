@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
-import { Mail, Phone, MapPin, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, X, Youtube } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -21,19 +21,22 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://www.instagram.com/metasounds/"
+                href="https://www.instagram.com/"
+                target="_blank"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com/"
+                target="_blank"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
-                <Twitter className="w-5 h-5" />
+                <X className="w-5 h-5" />
               </a>
               <a
-                href="https://www.youtube.com/metasounds/"
+                href="https://www.youtube.com/"
+                target="_blank"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Youtube className="w-5 h-5" />
