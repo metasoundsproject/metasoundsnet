@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-3xl font-bold mb-4">MetaSounds</h3>
             <p className="text-white/60 max-w-md mb-8">
-              Redefining music creation through innovative technology. 
+              Redefining art creation through innovative technology. 
               Smart instruments, professional audio equipment, and PC/gaming peripherals.
             </p>
             <div className="flex items-center gap-4">
