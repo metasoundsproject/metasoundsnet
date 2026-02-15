@@ -17,11 +17,11 @@ export default function Footer() {
             <h3 className="text-3xl font-bold mb-4">MetaSounds</h3>
             <p className="text-white/60 max-w-md mb-8">
               Redefining music creation through innovative technology. 
-              Smart instruments, gaming peripherals, and professional audio equipment.
+              Smart instruments, professional audio equipment, and PC/gaming peripherals.
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/metasounds/"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
@@ -33,7 +33,7 @@ export default function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/metasounds/"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Youtube className="w-5 h-5" />
@@ -111,13 +111,27 @@ export default function Footer() {
               {t.footer.copyright}
             </p>
             <div className="flex items-center gap-6">
-              <span className="font-mono text-xs text-white/30">
+              //<span className="font-mono text-xs text-white/30">
+              //  RED LABO
+              <a
+                href="https://www.redlabo.com"
+                className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
+                target="_blank"  // 可选：在新标签页打开链接
+              >
                 RED LABO
+              </a>
               </span>
               <span className="w-1 h-1 bg-white/30 rounded-full" />
-              <span className="font-mono text-xs text-white/30">
+              //<span className="font-mono text-xs text-white/30">
+              //  BitVibe
+              // </span>
+              <a
+                href="https://www.bitvibe.jp"
+                className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
+                target="_blank"  // 可选：在新标签页打开链接
+              >
                 BitVibe
-              </span>
+              </a>
             </div>
           </div>
         </div>
