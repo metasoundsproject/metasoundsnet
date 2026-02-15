@@ -89,11 +89,16 @@ export default function Philosophy() {
         </h2>
         
         <p
-          className="philosophy-text text-xl lg:text-2xl text-black/60 font-light max-w-2xl mx-auto"
-          style={{ opacity: 0 }}
-        >
-          {t.philosophy.subtitle}
-        </p>
+  className="philosophy-text subtitle-shimmer text-xl lg:text-2xl text-black/60 font-light max-w-2xl mx-auto relative overflow-hidden"
+  style={{ opacity: 0 }}
+>
+  <span className="relative z-10">
+    {t.philosophy.subtitle}
+  </span>
+
+  {/* shimmer light */}
+  <span className="shimmer-light absolute inset-0 pointer-events-none" />
+</p>
 
         {/* Decorative Elements */}
         <div className="philosophy-text mt-16 flex items-center justify-center gap-4" style={{ opacity: 0 }}>
