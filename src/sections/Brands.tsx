@@ -70,7 +70,7 @@ export default function Brands() {
         </div>
 
         {/* RED LABO */}
-        <div
+        
         <div
   ref={redLaboRef}
   className="
