@@ -26,7 +26,7 @@ function App() {
           <Philosophy />
           <Brands />
           <Hero />
-         // <Products />
+         
           
         </main>
         <Footer />
