@@ -100,7 +100,7 @@ export default function Hero() {
           >
             <div className="relative animate-float">
               <img
-                src="./oto-synthesizer.jpg"
+                src="./oto.jpg"
                 alt="OTO Synthesizer"
                 className="w-full max-w-lg mx-auto drop-shadow-2xl"
               />
