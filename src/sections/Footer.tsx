@@ -129,7 +129,7 @@ export default function Footer() {
 
               <a
                 href="https://www.redlabo.com"
-                className="font-mono text-s text-white/30 hover:text-white/80 transition-colors duration-200"
+                className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
                 target="_blank"  
               >
                 RED LABO
@@ -139,7 +139,7 @@ export default function Footer() {
 
               <a
                 href="https://www.bitvibe.jp"
-                className="font-mono text-s text-white/30 hover:text-white/80 transition-colors duration-200"
+                className="font-mono text-xs text-white/30 hover:text-white/80 transition-colors duration-200"
                 target="_blank"  
               >
                 BitVibe
