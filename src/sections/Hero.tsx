@@ -105,12 +105,13 @@ export default function Hero() {
                 className="w-full max-w-lg mx-auto drop-shadow-2xl"
               />
               
-              {/* Glow Effects */}
+              {/* Glow Effects 
               <div className="absolute bottom-1/4 left-1/4 w-12 h-8 bg-red-500/30 blur-xl rounded-full animate-pulse-glow" />
               <div className="absolute bottom-1/4 left-1/3 w-12 h-8 bg-blue-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.2s' }} />
               <div className="absolute bottom-1/4 left-1/2 w-12 h-8 bg-yellow-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.4s' }} />
               <div className="absolute bottom-1/4 right-1/3 w-12 h-8 bg-green-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.6s' }} />
               <div className="absolute bottom-1/4 right-1/4 w-12 h-8 bg-purple-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.8s' }} />
+              */}
             </div>
           </div>
 
