@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | MetaSounds</title>
+    <style>
+        /* 基础重置 & 全局样式 (苹果官网风格) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* 悬浮返回栏 (苹果磨砂玻璃效果) */
+        .floating-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.28, 0.11, 0.32, 1);
+        }
+
+        .floating-nav a {
+            color: #0071e3;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .floating-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 页面容器 */
+        .container {
+            max-width: 980px;
+            margin: 100px auto 80px;
+            padding: 0 24px;
+        }
+
+        /* 头部标题区域 (苹果官网动效) */
+        .hero {
+            text-align: center;
+            margin-bottom: 80px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s 0.2s forwards;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            color: #86868b;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* 核心福利标签 (苹果风格标签) */
+        .benefits {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin: 40px 0 60px;
+            flex-wrap: wrap;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s 0.4s forwards;
+        }
+
+        .benefit-tag {
+            background-color: #e8e8ed;
+            color: #1d1d1f;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .benefit-tag:hover {
+            background-color: #d6d6d9;
+        }
+
+        /* 岗位卡片 (苹果官网卡片风格) */
+        .job-cards {
+            display: grid;
+            gap: 32px;
+            margin-bottom: 80px;
+        }
+
+        .job-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 逐个显示卡片的动画延迟 */
+        .job-card:nth-child(1) { animation: fadeUp 0.8s 0.6s forwards; }
+        .job-card:nth-child(2) { animation: fadeUp 0.8s 0.8s forwards; }
+        .job-card:nth-child(3) { animation: fadeUp 0.8s 1s forwards; }
+
+        .job-card h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+
+        .job-card .job-title {
+            color: #0071e3;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .job-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 12px;
+            color: #1d1d1f;
+        }
+
+        .job-card ul {
+            list-style: disc;
+            margin-left: 20px;
+            color: #424245;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .job-card li {
+            margin-bottom: 8px;
+        }
+
+        /* 申请方式区域 */
+        .apply-section {
+            text-align: center;
+            padding: 40px 24px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin-bottom: 80px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s 1.2s forwards;
+        }
+
+        .apply-section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .apply-section p {
+            font-size: 17px;
+            color: #424245;
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+
+        .apply-btn {
+            background-color: #0071e3;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .apply-btn:hover {
+            background-color: #0077ed;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            font-size: 12px;
+            color: #86868b;
+            border-top: 1px solid #e8e8ed;
+        }
+
+        /* 通用动画 */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 响应式适配 (苹果官网响应式逻辑) */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 19px;
+            }
+
+            .job-card {
+                padding: 24px;
+            }
+
+            .job-card h2 {
+                font-size: 24px;
+            }
+
+            .apply-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 悬浮返回栏 -->
+    <div class="floating-nav">
+        <a href="https://metasounds.net" target="_blank">
+            ← Back to MetaSounds
+        </a>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 头部标题 -->
+        <div class="hero">
+            <h1>Join Our Team</h1>
+            <p>Shape the future of music technology with MetaSounds. We're looking for talented individuals to join our growing team.</p>
+        </div>
+
+        <!-- 核心福利标签 -->
+        <div class="benefits">
+            <div class="benefit-tag">Remote Work Available</div>
+            <div class="benefit-tag">Equity Incentives for Top Talent</div>
+            <div class="benefit-tag">Global Team</div>
+            <div class="benefit-tag">Consumer Electronics Focus</div>
+        </div>
+
+        <!-- 岗位卡片 -->
+        <div class="job-cards">
+            <!-- 工业设计师 -->
+            <div class="job-card">
+                <h2>Industrial Designer</h2>
+                <span class="job-title">Consumer Electronics</span>
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Design innovative consumer electronics products for MetaSounds' smart music devices</li>
+                    <li>Create product concepts, sketches, 3D models and final design specifications</li>
+                    <li>Collaborate with engineering teams to ensure design feasibility and manufacturability</li>
+                    <li>Maintain brand consistency and design language across all product lines</li>
+                </ul>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Proven experience in consumer electronics industrial design</li>
+                    <li>Strong structural design capabilities preferred</li>
+                    <li>Proficiency in CAD software (SolidWorks, Fusion 360, etc.)</li>
+                    <li>Understanding of manufacturing processes and materials</li>
+                    <li>Portfolio demonstrating consumer electronics design experience</li>
+                </ul>
+            </div>
+
+            <!-- 嵌入式工程师 -->
+            <div class="job-card">
+                <h2>Embedded Engineer</h2>
+                <span class="job-title">Consumer Electronics</span>
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Independently design schematics and PCB layouts for embedded systems</li>
+                    <li>Debug and optimize Android/Linux based embedded systems</li>
+                    <li>Ensure product compliance with industry standards and certifications</li>
+                    <li>Collaborate with cross-functional teams to deliver production-ready products</li>
+                </ul>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Ability to independently complete schematic design and PCB layout</li>
+                    <li>Experience in Android and Linux system debugging and driver development</li>
+                    <li>Experience with consumer electronics mass production and supply chain management</li>
+                    <li>EMC rectification experience is a strong plus</li>
+                    <li>Proficiency in Altium, Cadence or other PCB design tools</li>
+                </ul>
+            </div>
+
+            <!-- 视觉/UIUX设计师 -->
+            <div class="job-card">
+                <h2>Product Designer</h2>
+                <span class="job-title">Visual Communication & UI/UX</span>
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Create comprehensive visual communication for MetaSounds products</li>
+                    <li>Design intuitive and engaging UI/UX for smart music devices</li>
+                    <li>Develop brand assets, product interfaces and marketing materials</li>
+                    <li>Conduct user research and iterate designs based on feedback</li>
+                </ul>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Ability to independently complete product visual communication design</li>
+                    <li>Strong UI/UX design skills with portfolio demonstration</li>
+                    <li>Proficiency in Figma, Adobe Creative Suite and design systems</li>
+                    <li>Understanding of consumer electronics design principles</li>
+                    <li>Experience in music/audio tech industry preferred</li>
+                </ul>
+            </div>
+        </div>
+
+      <!-- 音频软件工程师 -->
+<div class="job-card">
+    <h2>Audio Software Engineer</h2>
+    <span class="job-title">Audio Technology & Software Development</span>
+    <h3>Responsibilities</h3>
+    <ul>
+        <li>Design and develop high-performance audio software for MetaSounds smart music devices</li>
+        <li>Implement audio processing algorithms and features using JUCE framework</li>
+        <li>Develop cross-platform audio applications with Kotlin (Android focus)</li>
+        <li>Optimize audio performance, latency and quality for consumer electronics products</li>
+        <li>Collaborate with hardware and product teams to integrate audio software with physical devices</li>
+        <li>Debug and resolve audio-related software issues across different platforms</li>
+    </ul>
+    <h3>Requirements</h3>
+    <ul>
+        <li>Proficient in Kotlin development with hands-on Android audio application experience</li>
+        <li>Strong experience with JUCE framework for audio software development</li>
+        <li>Deep understanding of digital audio processing principles and techniques</li>
+        <li>Familiarity with audio standards (ASIO, Core Audio, OpenSL ES) preferred</li>
+        <li>Experience in consumer electronics or music/audio tech industry is a plus</li>
+        <li>Ability to independently design and implement audio software modules</li>
+    </ul>
+</div>
+
+        <!-- 申请方式 -->
+        <div class="apply-section">
+            <h2>How to Apply</h2>
+            <p>Interested candidates please send your resume, portfolio (if applicable) and cover letter to careers@metasounds.net with the job title in the subject line. We offer flexible remote work options and equity incentives for exceptional talent.</p>
+            <button class="apply-btn" onclick="window.location.href='mailto:careers@metasounds.net'">Apply Now</button>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        © 2026 MetaSounds. All rights reserved.
+    </div>
+
+    <script>
+        // 滚动时优化悬浮栏效果 (苹果官网交互逻辑)
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.floating-nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(255, 255, 255, 0.9)';
+                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.08)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.8)';
+                nav.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+            }
+        });
+    </script>
+</body>
+</html>
