@@ -107,7 +107,7 @@ export const translations = {
       contact: '联系我们',
       email: 'contact@metasounds.net',
       phone: '+81(JP)-080-3398-1211 | +86(CN)-18908489758',
-      address: '日本东京 | 中国昆明 · 长沙 · 惠州',
+      address: '日本 东京 | 中国 昆明 · 长沙 · 惠州',
       links: '相关链接',
       follow: '关注我们',
       copyright: '© 2026 MetaSounds. 保留所有权利。',
