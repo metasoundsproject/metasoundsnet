@@ -2,29 +2,49 @@ import { useEffect, useRef, useState } from "react";
 
 export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
-  // 初始状态改为 true，默认播放
   const [playing, setPlaying] = useState(true);
   const [volume, setVolume] = useState(0.4);
+  // 新增：保存淡入/淡出的定时器，避免多个定时器冲突
+  const fadeTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // 1. 组件挂载时自动播放（实现默认播放）
+  // 1. 组件挂载：初始化播放 + 监听循环事件
   useEffect(() => {
     const audio = audioRef.current;
-    if (audio && playing) {
+    if (!audio) return;
+
+    // 监听音频播放结束事件，主动触发下一次播放（兜底循环）
+    const handleEnded = () => {
+      if (playing) { // 只有播放状态下才循环
+        fadeIn(audio); // 循环时重新淡入
+      }
+    };
+    audio.addEventListener("ended", handleEnded);
+
+    // 初始自动播放
+    if (playing) {
       fadeIn(audio);
     }
-  }, []);
 
-  // 2. 音量变化时更新音频音量
+    // 清理副作用
+    return () => {
+      audio.removeEventListener("ended", handleEnded);
+      if (fadeTimerRef.current) {
+        clearInterval(fadeTimerRef.current);
+      }
+    };
+  }, [playing, volume]);
+
+  // 2. 音量变化时更新
   useEffect(() => {
     const audio = audioRef.current;
-    if (audio) {
+    if (audio && !fadeTimerRef.current) { // 淡入淡出中不更新音量
       audio.volume = volume;
     }
   }, [volume]);
 
   const togglePlay = () => {
     const audio = audioRef.current;
-    if (!audio) return; // 增加空值保护，避免报错
+    if (!audio) return;
 
     if (playing) {
       fadeOut(audio);
@@ -34,35 +54,46 @@ export default function MusicPlayer() {
     setPlaying(!playing);
   };
 
-  // 平滑淡入
+  // 修复：平滑淡入（清空旧定时器 + 不干扰循环）
   const fadeIn = (audio: HTMLAudioElement) => {
+    // 先清空旧的定时器，避免多个定时器叠加
+    if (fadeTimerRef.current) {
+      clearInterval(fadeTimerRef.current);
+    }
+
     audio.volume = 0;
-    // 增加错误捕获的提示，方便调试
     audio.play().catch((err) => {
       console.warn("自动播放失败（浏览器策略限制）：", err);
-      setPlaying(false); // 播放失败时重置状态
+      setPlaying(false);
     });
+
     let v = 0;
-    const fade = setInterval(() => {
+    fadeTimerRef.current = setInterval(() => {
       v += 0.02;
       if (v >= volume) {
         audio.volume = volume;
-        clearInterval(fade);
+        clearInterval(fadeTimerRef.current!);
+        fadeTimerRef.current = null; // 标记淡入完成
       } else {
         audio.volume = v;
       }
     }, 40);
   };
 
-  // 平滑淡出
+  // 修复：平滑淡出（清空旧定时器 + 不重置音量）
   const fadeOut = (audio: HTMLAudioElement) => {
+    if (fadeTimerRef.current) {
+      clearInterval(fadeTimerRef.current);
+    }
+
     let v = audio.volume;
-    const fade = setInterval(() => {
+    fadeTimerRef.current = setInterval(() => {
       v -= 0.02;
       if (v <= 0) {
         audio.pause();
-        audio.volume = volume;
-        clearInterval(fade);
+        clearInterval(fadeTimerRef.current!);
+        fadeTimerRef.current = null; // 标记淡出完成
+        // 不再重置 volume！避免干扰下一次循环
       } else {
         audio.volume = v;
       }
@@ -71,8 +102,8 @@ export default function MusicPlayer() {
 
   return (
     <>
-      {/* loop 属性保留，确保循环播放 */}
-      <audio ref={audioRef} src="/background.mp3" loop />
+      {/* 保留 loop 属性，配合 ended 事件双重保障循环 */}
+      <audio ref={audioRef} src="/background.mp3" loop preload="auto" />
 
       {/* 悬浮控制面板 */}
       <div className="
@@ -83,7 +114,6 @@ export default function MusicPlayer() {
   flex items-center gap-4
   z-[9999]
 ">
-        {/* 播放按钮（初始显示暂停图标，因为默认播放） */}
         <button
           onClick={togglePlay}
           className="
@@ -98,7 +128,6 @@ export default function MusicPlayer() {
           {playing ? "❚❚" : "▶"}
         </button>
 
-        {/* 音量 slider */}
         <input
           type="range"
           min={0}
