@@ -65,14 +65,14 @@ We welcome inquiries for cooperation and distribution opportunities worldwide.
             <ul className="space-y-3">
               <li>
                 <a href="/career.html" className="text-white/70 hover:text-white transition-colors link-underline">
-                  Job Opportunity
+                  Job Opportunities
                 </a>
               </li>
               
              
               <li>
                 <a href="/story.html" className="text-white/70 hover:text-white transition-colors link-underline">
-                  Company History
+                  About Us
                 </a>
               </li>
               <li>
