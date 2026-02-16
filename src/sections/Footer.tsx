@@ -27,8 +27,10 @@ export default function Footer() {
     </p>
   </div>
 </div>
-             <p className="text-white/60 max-w-md mb-8">Redefining art creation through innovative technology. 
-              Smart instruments, professional audio equipment, and PC/gaming peripherals.
+             <p className="text-white/60 max-w-md mb-8">
+               We are actively seeking global partners, distributors, agents and sales professionals to join MetaSounds.
+If you are interested in collaboration, reselling, or representing our innovative audio and music products,
+we welcome you to connect with us and grow together.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -63,8 +65,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#hero" className="text-white/70 hover:text-white transition-colors link-underline">
-                  {t.nav.products}
+                <a href="/career.html" className="text-white/70 hover:text-white transition-colors link-underline">
+                  Job Opportunity
                 </a>
               </li>
               
