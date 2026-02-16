@@ -4,8 +4,8 @@ export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(true);
   const [volume, setVolume] = useState(0.4);
-  // 新增：保存淡入/淡出的定时器，避免多个定时器冲突
-  const fadeTimerRef = useRef<NodeJS.Timeout | null>(null);
+  // 🔥 修复：将 NodeJS.Timeout 改为 number 类型
+  const fadeTimerRef = useRef<number | null>(null);
 
   // 1. 组件挂载：初始化播放 + 监听循环事件
   useEffect(() => {
@@ -111,7 +111,7 @@ export default function MusicPlayer() {
   bg-black/20 backdrop-blur-md
   px-5 py-3 rounded-2xl
   shadow-xl
-  flex items-center gap-4
+  flex items-center justify-center gap-4
   z-[9999]
 ">
         <button
