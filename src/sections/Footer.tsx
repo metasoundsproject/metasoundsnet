@@ -28,9 +28,8 @@ export default function Footer() {
   </div>
 </div>
              <p className="text-white/60 max-w-md mb-8">
-               We are actively seeking global partners, distributors, agents and sales professionals to join MetaSounds.
-If you are interested in collaboration, reselling, or representing our innovative audio and music products,
-we welcome you to connect with us and grow together.
+               MetaSounds is actively partnering with global distributors, agents and sales talents.
+We welcome inquiries for cooperation and distribution opportunities worldwide.
             </p>
             <div className="flex items-center gap-4">
               <a
