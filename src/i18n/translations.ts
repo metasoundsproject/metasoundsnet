@@ -4,7 +4,7 @@ export const translations = {
   en: {
     nav: {
       products: 'Products',
-      about: 'About',
+      about: 'Brands',
       support: 'Support',
     },
     hero: {
@@ -59,8 +59,8 @@ export const translations = {
   },
   zh: {
     nav: {
-      products: '产品矩阵',
-      about: '关于我们',
+      products: '产品',
+      about: '品牌',
       support: '技术支持',
     },
     hero: {
@@ -116,7 +116,7 @@ export const translations = {
   ja: {
     nav: {
       products: '製品',
-      about: '会社概要',
+      about: 'ブランド',
       support: 'サポート',
     },
     hero: {
@@ -172,7 +172,7 @@ export const translations = {
   ko: {
     nav: {
       products: '제품',
-      about: '회사 소개',
+      about: '브랜드',
       support: '지원',
     },
     hero: {
