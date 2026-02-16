@@ -131,10 +131,11 @@
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
         }
 
-        /* 逐个显示卡片的动画延迟 */
+        /* 修复：为4个卡片都添加动画延迟 */
         .job-card:nth-child(1) { animation: fadeUp 0.8s 0.6s forwards; }
         .job-card:nth-child(2) { animation: fadeUp 0.8s 0.8s forwards; }
-        .job-card:nth-child(3) { animation: fadeUp 0.8s 1s forwards; }
+        .job-card:nth-child(3) { animation: fadeUp 0.8s 1.0s forwards; }
+        .job-card:nth-child(4) { animation: fadeUp 0.8s 1.2s forwards; }
 
         .job-card h2 {
             font-size: 28px;
@@ -179,7 +180,7 @@
             margin-bottom: 80px;
             opacity: 0;
             transform: translateY(20px);
-            animation: fadeUp 0.8s 1.2s forwards;
+            animation: fadeUp 0.8s 1.4s forwards;
         }
 
         .apply-section h2 {
@@ -276,7 +277,7 @@
             <div class="benefit-tag">Consumer Electronics Focus</div>
         </div>
 
-        <!-- 岗位卡片 -->
+        <!-- 岗位卡片 (所有卡片都在这个容器内) -->
         <div class="job-cards">
             <!-- 工业设计师 -->
             <div class="job-card">
@@ -340,31 +341,31 @@
                     <li>Experience in music/audio tech industry preferred</li>
                 </ul>
             </div>
-        </div>
 
-      <!-- 音频软件工程师 -->
-<div class="job-card">
-    <h2>Audio Software Engineer</h2>
-    <span class="job-title">Audio Technology & Software Development</span>
-    <h3>Responsibilities</h3>
-    <ul>
-        <li>Design and develop high-performance audio software for MetaSounds smart music devices</li>
-        <li>Implement audio processing algorithms and features using JUCE framework</li>
-        <li>Develop cross-platform audio applications with Kotlin (Android focus)</li>
-        <li>Optimize audio performance, latency and quality for consumer electronics products</li>
-        <li>Collaborate with hardware and product teams to integrate audio software with physical devices</li>
-        <li>Debug and resolve audio-related software issues across different platforms</li>
-    </ul>
-    <h3>Requirements</h3>
-    <ul>
-        <li>Proficient in Kotlin development with hands-on Android audio application experience</li>
-        <li>Strong experience with JUCE framework for audio software development</li>
-        <li>Deep understanding of digital audio processing principles and techniques</li>
-        <li>Familiarity with audio standards (ASIO, Core Audio, OpenSL ES) preferred</li>
-        <li>Experience in consumer electronics or music/audio tech industry is a plus</li>
-        <li>Ability to independently design and implement audio software modules</li>
-    </ul>
-</div>
+            <!-- 音频软件工程师 (已纳入容器内) -->
+            <div class="job-card">
+                <h2>Audio Software Engineer</h2>
+                <span class="job-title">Audio Technology & Software Development</span>
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Design and develop high-performance audio software for MetaSounds smart music devices</li>
+                    <li>Implement audio processing algorithms and features using JUCE framework</li>
+                    <li>Develop cross-platform audio applications with Kotlin (Android focus)</li>
+                    <li>Optimize audio performance, latency and quality for consumer electronics products</li>
+                    <li>Collaborate with hardware and product teams to integrate audio software with physical devices</li>
+                    <li>Debug and resolve audio-related software issues across different platforms</li>
+                </ul>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Proficient in Kotlin development with hands-on Android audio application experience</li>
+                    <li>Strong experience with JUCE framework for audio software development</li>
+                    <li>Deep understanding of digital audio processing principles and techniques</li>
+                    <li>Familiarity with audio standards (ASIO, Core Audio, OpenSL ES) preferred</li>
+                    <li>Experience in consumer electronics or music/audio tech industry is a plus</li>
+                    <li>Ability to independently design and implement audio software modules</li>
+                </ul>
+            </div>
+        </div> <!-- 修复：闭合job-cards容器 -->
 
         <!-- 申请方式 -->
         <div class="apply-section">
