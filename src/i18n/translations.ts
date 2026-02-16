@@ -50,7 +50,7 @@ export const translations = {
     footer: {
       contact: 'Contact',
       email: 'contact@metasounds.net',
-      phone: '+81(JP)-080-3398-1211 | +86(CN)-18908489758',
+      phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: 'Tokyo, Japan | Kunming · Changsha · Huizhou, China',
       links: 'Links',
       follow: 'Follow Us',
@@ -106,7 +106,7 @@ export const translations = {
     footer: {
       contact: '联系我们',
       email: 'contact@metasounds.net',
-      phone: '+81(JP)-080-3398-1211 | +86(CN)-18908489758',
+      phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: '日本 东京 | 中国 昆明 · 长沙 · 惠州',
       links: '相关链接',
       follow: '关注我们',
@@ -162,7 +162,7 @@ export const translations = {
     footer: {
       contact: 'お問い合わせ',
       email: 'contact@metasounds.net',
-      phone: '+81(JP)-080-3398-1211 | +86(CN)-18908489758',
+      phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: '日本 東京都 | 中国 昆明市 · 長沙市 · 惠州市',
       links: 'リンク',
       follow: 'フォロー',
@@ -218,7 +218,7 @@ export const translations = {
     footer: {
       contact: '연락처',
       email: 'contact@metasounds.net',
-      phone: '+81(JP)-080-3398-1211 | +86(CN)-18908489758',
+      phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: '일본 도쿄 | 중국 쿤밍 · 창사 · 후이저우',
       links: '링크',
       follow: '팔로우',
