@@ -61,7 +61,7 @@ export const translations = {
     nav: {
       products: '产品',
       about: '品牌',
-      support: '技术支持',
+      support: '售后支持',
     },
     hero: {
       title: 'OTO',
