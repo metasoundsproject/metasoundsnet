@@ -181,7 +181,7 @@ export const translations = {
     },
     philosophy: {
       title: '創造に、境界線はない',
-      subtitle: '卓越に思考し、スマートに創る。',
+      subtitle: '卓越に思考し、スマートに創る',
     },
     footer: {
       contact: 'お問い合わせ',
