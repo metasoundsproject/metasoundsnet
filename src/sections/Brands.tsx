@@ -95,7 +95,7 @@ export default function Brands() {
   href="https://www.redlabo.com" 
   target="_blank" 
   rel="noopener noreferrer"
-  className="w-3/4 h-3/4 flex items-center justify-center"
+  className="w-4/4 h-4/4 flex items-center justify-center"
 >
               <img
                 src="./redlabologo.png"
@@ -202,7 +202,7 @@ export default function Brands() {
   href="https://www.bitvibe.jp" 
   target="_blank" 
   rel="noopener noreferrer"
-  className="w-3/4 h-3/4 flex items-center justify-center"
+  className="w-4/4 h-4/4 flex items-center justify-center"
 >
               <img
                 src="./bitvibelogo.png"
