@@ -74,12 +74,12 @@ export default function Brands() {
           ref={redLaboRef}
           className="
             relative
-            grid lg:grid-cols-2 gap-12 items-center mb-32
+            grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-32
             bg-gradient-to-t
             from-gray-50
             to-red-30/30
             rounded-3xl
-            p-12
+            p-6 lg:p-12
           "
           style={{
             opacity: 0,
@@ -90,32 +90,44 @@ export default function Brands() {
             `,
           }}
         >
-          <div className="relative">
-            <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
-              {/* 使用 filter: drop-shadow 让阴影只作用于非透明部分 */}
+          <div className="relative order-1 lg:order-1">
+            {/* 移动端：自适应高度，不强制正方形 */}
+            <div className="
+              w-full 
+              h-auto min-h-[200px] sm:min-h-[280px] lg:min-h-[400px]
+              rounded-2xl lg:rounded-3xl 
+              overflow-hidden 
+              flex items-center justify-center
+              p-4 lg:p-0
+            ">
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
-                className="w-3/4 h-3/4 object-contain
-                  [filter:drop-shadow(0_20px_30px_rgba(0,0,0,0.2))]
-                  hover:[filter:drop-shadow(0_35px_50px_rgba(0,0,0,0.35))]
+                className="
+                  w-full max-w-[200px] sm:max-w-[280px] lg:max-w-none lg:w-3/4
+                  h-auto max-h-[200px] sm:max-h-[280px] lg:max-h-none lg:h-3/4
+                  object-contain
+                  [filter:drop-shadow(0_15px_25px_rgba(0,0,0,0.2))]
+                  lg:[filter:drop-shadow(0_20px_30px_rgba(0,0,0,0.2))]
+                  hover:[filter:drop-shadow(0_25px_40px_rgba(0,0,0,0.35))]
+                  lg:hover:[filter:drop-shadow(0_35px_50px_rgba(0,0,0,0.35))]
                   transition-all duration-500 ease-out
-                  hover:-translate-y-4 hover:scale-110
+                  hover:-translate-y-3 lg:hover:-translate-y-4 
+                  hover:scale-105 lg:hover:scale-110
                   cursor-pointer
                   will-change-transform
                 "
                 style={{
-                  // 确保透明背景不会阻挡鼠标事件
                   mixBlendMode: 'multiply',
                 }}
               />
             </div>
             {/* Red accent */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-red-500 rounded-full opacity-20 blur-2xl" />
+            <div className="absolute -bottom-4 -right-4 w-16 h-16 lg:w-24 lg:h-24 bg-red-500 rounded-full opacity-20 blur-2xl" />
           </div>
           
-          <div className="lg:pl-8">
-            <div className="flex items-center gap-4 mb-6">
+          <div className="lg:pl-8 order-2 lg:order-2 text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
               <div className="w-3 h-3 bg-red-500 rounded-full" />
               <span className="font-mono text-sm text-red-500 tracking-wider uppercase">
                 {t.brands.redLabo.tagline}
@@ -127,7 +139,7 @@ export default function Brands() {
             <p className="text-lg text-black/60 leading-relaxed mb-8">
               {t.brands.redLabo.description}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
                 AI-Powered
               </span>
@@ -146,12 +158,12 @@ export default function Brands() {
           ref={bitVibeRef}
           className="
             relative
-            grid lg:grid-cols-2 gap-12 items-center
+            grid lg:grid-cols-2 gap-8 lg:gap-12 items-center
             bg-gradient-to-t
             from-gray-50
             to-blue-50/60
             rounded-3xl
-            p-12
+            p-6 lg:p-12
           "
           style={{
             opacity: 0,
@@ -162,8 +174,8 @@ export default function Brands() {
             `,
           }}
         >
-          <div className="order-2 lg:order-1 lg:pr-8">
-            <div className="flex items-center gap-4 mb-6">
+          <div className="order-2 lg:order-1 lg:pr-8 text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
               <div className="w-3 h-3 bg-blue-500 rounded-full" />
               <span className="font-mono text-sm text-blue-500 tracking-wider uppercase">
                 {t.brands.bitVibe.tagline}
@@ -175,7 +187,7 @@ export default function Brands() {
             <p className="text-lg text-black/60 leading-relaxed mb-8">
               {t.brands.bitVibe.description}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               <span className="px-4 py-2 bg-black/5 rounded-full text-sm font-mono">
                 Audio Devices
               </span>
@@ -189,15 +201,29 @@ export default function Brands() {
           </div>
           
           <div className="order-1 lg:order-2 relative">
-            <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
+            {/* 移动端：自适应高度，不强制正方形 */}
+            <div className="
+              w-full 
+              h-auto min-h-[200px] sm:min-h-[280px] lg:min-h-[400px]
+              rounded-2xl lg:rounded-3xl 
+              overflow-hidden 
+              flex items-center justify-center
+              p-4 lg:p-0
+            ">
               <img
                 src="./bitvibelogo.png"
                 alt="BitVibe"
-                className="w-3/4 h-3/4 object-contain
-                  [filter:drop-shadow(0_20px_30px_rgba(0,0,0,0.2))]
-                  hover:[filter:drop-shadow(0_35px_50px_rgba(0,0,0,0.35))]
+                className="
+                  w-full max-w-[200px] sm:max-w-[280px] lg:max-w-none lg:w-3/4
+                  h-auto max-h-[200px] sm:max-h-[280px] lg:max-h-none lg:h-3/4
+                  object-contain
+                  [filter:drop-shadow(0_15px_25px_rgba(0,0,0,0.2))]
+                  lg:[filter:drop-shadow(0_20px_30px_rgba(0,0,0,0.2))]
+                  hover:[filter:drop-shadow(0_25px_40px_rgba(0,0,0,0.35))]
+                  lg:hover:[filter:drop-shadow(0_35px_50px_rgba(0,0,0,0.35))]
                   transition-all duration-500 ease-out
-                  hover:-translate-y-4 hover:scale-110
+                  hover:-translate-y-3 lg:hover:-translate-y-4 
+                  hover:scale-105 lg:hover:scale-110
                   cursor-pointer
                   will-change-transform
                 "
@@ -207,7 +233,7 @@ export default function Brands() {
               />
             </div>
             {/* Blue accent */}
-            <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 blur-2xl" />
+            <div className="absolute -bottom-4 -left-4 w-16 h-16 lg:w-24 lg:h-24 bg-blue-500 rounded-full opacity-20 blur-2xl" />
           </div>
         </div>
       </div>
