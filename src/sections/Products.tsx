@@ -18,18 +18,21 @@ const products = [
     image: './oto-synthesizer.jpg',
     color: 'from-red-500/20 to-transparent',
     accent: 'bg-red-500',
+    link: 'https://www.redlabo.com/oto', // 添加链接
   },
   {
     id: 'midi',
     image: './bitvibe-midi.jpg',
     color: 'from-blue-500/20 to-transparent',
     accent: 'bg-blue-500',
+    link: 'https://www.bitvibe.jp/midi', // 添加链接
   },
   {
     id: 'sound',
     image: './sound-system.jpg',
     color: 'from-purple-500/20 to-transparent',
     accent: 'bg-purple-500',
+    link: 'https://www.bitvibe.jp/sound-system', // 添加链接
   },
 ];
 
@@ -173,12 +176,17 @@ export default function Products() {
                   </span>
                 </div>
 
-                {/* Hover Arrow */}
-                <div className="absolute top-6 left-6 lg:top-8 lg:left-8 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                {/* Hover Arrow - 添加链接 */}
+                <a
+                  href={product.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-6 left-6 lg:top-8 lg:left-8 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors">
                     <ArrowUpRight className="w-5 h-5 text-black" />
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           );
