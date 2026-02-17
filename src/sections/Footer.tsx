@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-bold mb-4">{t.support?.title || 'Support'}</h3>
+            <h3 className="text-3xl font-bold mb-4">{t.footer.support?.title || 'Support'}</h3>
 
          <div className="group relative inline-block mb-8">
   {/* glow layer */}
@@ -23,12 +23,12 @@ export default function Footer() {
   {/* main badge */}
   <div className="relative bg-white/10 border border-white/20 rounded-lg px-4 py-2 backdrop-blur-sm transition-all duration-300 group-hover:bg-white/15 group-hover:-translate-y-0.5">
     <p className="text-white/90 text-sm tracking-wide">
-      {t.support?.badge || '1-Year Warranty · 30-Day Returns · Free Worldwide Shipping'}
+      {t.footer.support?.badge || '1-Year Warranty · 30-Day Returns · Free Worldwide Shipping'}
     </p>
   </div>
 </div>
              <p className="text-white/60 max-w-md mb-8">
-               {t.support?.description || 'MetaSounds is actively partnering with global distributors, agents and sales talents. We welcome inquiries for cooperation and distribution opportunities worldwide.'}
+               {t.footer.support?.description || 'MetaSounds is actively partnering with global distributors, agents and sales talents. We welcome inquiries for cooperation and distribution opportunities worldwide.'}
             </p>
             <div className="flex items-center gap-4">
               <a
