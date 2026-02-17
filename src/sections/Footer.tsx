@@ -64,7 +64,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a href="/career.html" className="text-white/70 hover:text-white transition-colors link-underline">
-                  {t.footer.links?.careers || 'Careers'}
+                  {t.footer.links?.career || 'Careers'}
                 </a>
               </li>
               
