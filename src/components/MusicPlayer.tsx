@@ -4,7 +4,6 @@ export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(true);
   const [volume, setVolume] = useState(0.4);
-  // 🔥 修复：将 NodeJS.Timeout 改为 number 类型
   const fadeTimerRef = useRef<number | null>(null);
 
   // 1. 组件挂载：初始化播放 + 监听循环事件
@@ -14,8 +13,9 @@ export default function MusicPlayer() {
 
     // 监听音频播放结束事件，主动触发下一次播放（兜底循环）
     const handleEnded = () => {
-      if (playing) { // 只有播放状态下才循环
-        fadeIn(audio); // 循环时重新淡入
+      // 关键修复：同时校验 playing 状态和音频实际状态
+      if (playing && !audio.paused) { 
+        fadeIn(audio);
       }
     };
     audio.addEventListener("ended", handleEnded);
@@ -47,14 +47,16 @@ export default function MusicPlayer() {
     if (!audio) return;
 
     if (playing) {
+      // 暂停时：先停止ended事件的自动循环，再执行淡出
+      setPlaying(false);
       fadeOut(audio);
     } else {
+      setPlaying(true);
       fadeIn(audio);
     }
-    setPlaying(!playing);
   };
 
-  // 修复：平滑淡入（清空旧定时器 + 不干扰循环）
+  // 平滑淡入
   const fadeIn = (audio: HTMLAudioElement) => {
     // 先清空旧的定时器，避免多个定时器叠加
     if (fadeTimerRef.current) {
@@ -80,7 +82,7 @@ export default function MusicPlayer() {
     }, 40);
   };
 
-  // 修复：平滑淡出（清空旧定时器 + 不重置音量）
+  // 修复：确保淡出后彻底停止播放并同步状态
   const fadeOut = (audio: HTMLAudioElement) => {
     if (fadeTimerRef.current) {
       clearInterval(fadeTimerRef.current);
@@ -91,9 +93,11 @@ export default function MusicPlayer() {
       v -= 0.02;
       if (v <= 0) {
         audio.pause();
+        audio.currentTime = 0; // 重置播放位置（可选）
         clearInterval(fadeTimerRef.current!);
-        fadeTimerRef.current = null; // 标记淡出完成
-        // 不再重置 volume！避免干扰下一次循环
+        fadeTimerRef.current = null;
+        // 双重保障：确保状态与实际播放状态一致
+        setPlaying(false);
       } else {
         audio.volume = v;
       }
