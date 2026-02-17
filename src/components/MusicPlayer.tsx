@@ -1,88 +1,103 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(true);
   const [volume, setVolume] = useState(0.4);
   const fadeTimerRef = useRef<number | null>(null);
+  // 使用 ref 追踪实际播放状态，避免闭包问题
+  const playingRef = useRef(true);
+  const volumeRef = useRef(0.4);
+
+  // 同步 ref 与 state
+  useEffect(() => {
+    playingRef.current = playing;
+  }, [playing]);
+
+  useEffect(() => {
+    volumeRef.current = volume;
+  }, [volume]);
 
   // 1. 组件挂载：初始化播放 + 监听循环事件
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
-    // 监听音频播放结束事件，主动触发下一次播放（兜底循环）
+    // 使用 ref 读取最新状态，避免闭包陷阱
     const handleEnded = () => {
-      // 关键修复：同时校验 playing 状态和音频实际状态
-      if (playing && !audio.paused) { 
-        fadeIn(audio);
+      if (playingRef.current && !audio.paused) {
+        // 使用 ref 中的最新音量
+        fadeIn(audio, volumeRef.current);
       }
     };
+
     audio.addEventListener("ended", handleEnded);
 
     // 初始自动播放
-    if (playing) {
-      fadeIn(audio);
+    if (playingRef.current) {
+      fadeIn(audio, volume);
     }
 
-    // 清理副作用
     return () => {
       audio.removeEventListener("ended", handleEnded);
       if (fadeTimerRef.current) {
         clearInterval(fadeTimerRef.current);
       }
     };
-  }, [playing, volume]);
+  }, []); // 空依赖，只绑定一次事件
 
-  // 2. 音量变化时更新
+  // 2. 音量变化时更新（非淡入淡出期间）
   useEffect(() => {
     const audio = audioRef.current;
-    if (audio && !fadeTimerRef.current) { // 淡入淡出中不更新音量
+    if (audio && !fadeTimerRef.current) {
       audio.volume = volume;
     }
   }, [volume]);
 
-  const togglePlay = () => {
+  const togglePlay = useCallback(() => {
     const audio = audioRef.current;
     if (!audio) return;
 
-    if (playing) {
-      // 暂停时：先停止ended事件的自动循环，再执行淡出
+    if (playingRef.current) {
+      // 先更新 ref，再执行淡出
+      playingRef.current = false;
       setPlaying(false);
       fadeOut(audio);
     } else {
+      playingRef.current = true;
       setPlaying(true);
-      fadeIn(audio);
+      fadeIn(audio, volumeRef.current);
     }
-  };
+  }, []);
 
-  // 平滑淡入
-  const fadeIn = (audio: HTMLAudioElement) => {
-    // 先清空旧的定时器，避免多个定时器叠加
+  // 平滑淡入 - 接收目标音量参数，避免依赖闭包
+  const fadeIn = (audio: HTMLAudioElement, targetVolume: number) => {
     if (fadeTimerRef.current) {
       clearInterval(fadeTimerRef.current);
     }
 
     audio.volume = 0;
+    audio.currentTime = 0; // 从头开始播放
     audio.play().catch((err) => {
       console.warn("自动播放失败（浏览器策略限制）：", err);
+      playingRef.current = false;
       setPlaying(false);
     });
 
     let v = 0;
     fadeTimerRef.current = setInterval(() => {
       v += 0.02;
-      if (v >= volume) {
-        audio.volume = volume;
+      if (v >= targetVolume) {
+        audio.volume = targetVolume;
         clearInterval(fadeTimerRef.current!);
-        fadeTimerRef.current = null; // 标记淡入完成
+        fadeTimerRef.current = null;
       } else {
         audio.volume = v;
       }
     }, 40);
   };
 
-  // 修复：确保淡出后彻底停止播放并同步状态
+  // 平滑淡出
   const fadeOut = (audio: HTMLAudioElement) => {
     if (fadeTimerRef.current) {
       clearInterval(fadeTimerRef.current);
@@ -93,11 +108,9 @@ export default function MusicPlayer() {
       v -= 0.02;
       if (v <= 0) {
         audio.pause();
-        audio.currentTime = 0; // 重置播放位置（可选）
+        audio.currentTime = 0;
         clearInterval(fadeTimerRef.current!);
         fadeTimerRef.current = null;
-        // 双重保障：确保状态与实际播放状态一致
-        setPlaying(false);
       } else {
         audio.volume = v;
       }
@@ -106,28 +119,12 @@ export default function MusicPlayer() {
 
   return (
     <>
-      {/* 保留 loop 属性，配合 ended 事件双重保障循环 */}
-      <audio ref={audioRef} src="/background.mp3" loop preload="auto" />
-
-      {/* 悬浮控制面板 */}
-      <div className="
-  fixed bottom-6 right-6
-  bg-black/20 backdrop-blur-md
-  px-5 py-3 rounded-2xl
-  shadow-xl
-  flex items-center justify-center gap-4
-  z-[9999]
-">
+      <audio ref={audioRef} src="/background.mp3" preload="auto" />
+      
+      <div className="fixed bottom-6 right-6 bg-black/20 backdrop-blur-md px-5 py-3 rounded-2xl shadow-xl flex items-center justify-center gap-4 z-[9999]">
         <button
           onClick={togglePlay}
-          className="
-      w-9 h-9 rounded-full
-      border border-white/20
-      flex items-center justify-center
-      text-white
-      hover:bg-white hover:text-black
-      transition-all duration-300
-    "
+          className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300"
         >
           {playing ? "❚❚" : "▶"}
         </button>
