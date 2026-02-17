@@ -125,7 +125,7 @@ export const translations = {
       support: {
         title: '售后支持',
         badge: '一年质保 · 30天无理由退换 · 全球免费配送',
-        description: 'MetaSounds 正在积极寻求与全球分销商、代理商和销售人才的合作。我们欢迎世界各地的合作与分销咨询。',
+        description: 'MetaSounds 正在积极寻求与全球分销商、代理商和销售人才的合作。诚挚欢迎世界各地的合作与分销咨询。',
       }    
      links: {
        career: '职业发展',
