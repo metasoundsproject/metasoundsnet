@@ -92,16 +92,22 @@ export default function Brands() {
         >
           <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
+              {/* 使用 filter: drop-shadow 让阴影只作用于非透明部分 */}
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
-                className="w-3/4 h-3/4 object-cover 
-                  drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)]
-                  hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.25)]
+                className="w-3/4 h-3/4 object-contain
+                  [filter:drop-shadow(0_20px_30px_rgba(0,0,0,0.2))]
+                  hover:[filter:drop-shadow(0_35px_50px_rgba(0,0,0,0.35))]
                   transition-all duration-500 ease-out
-                  hover:-translate-y-3 hover:scale-105
+                  hover:-translate-y-4 hover:scale-110
                   cursor-pointer
+                  will-change-transform
                 "
+                style={{
+                  // 确保透明背景不会阻挡鼠标事件
+                  mixBlendMode: 'multiply',
+                }}
               />
             </div>
             {/* Red accent */}
@@ -187,13 +193,17 @@ export default function Brands() {
               <img
                 src="./bitvibelogo.png"
                 alt="BitVibe"
-                className="w-3/4 h-3/4 object-cover 
-                  drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)]
-                  hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.25)]
+                className="w-3/4 h-3/4 object-contain
+                  [filter:drop-shadow(0_20px_30px_rgba(0,0,0,0.2))]
+                  hover:[filter:drop-shadow(0_35px_50px_rgba(0,0,0,0.35))]
                   transition-all duration-500 ease-out
-                  hover:-translate-y-3 hover:scale-105
+                  hover:-translate-y-4 hover:scale-110
                   cursor-pointer
+                  will-change-transform
                 "
+                style={{
+                  mixBlendMode: 'multiply',
+                }}
               />
             </div>
             {/* Blue accent */}
