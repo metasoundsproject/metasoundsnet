@@ -52,7 +52,7 @@ export const translations = {
       email: 'contact@metasounds.net',
       phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: 'Tokyo, Japan | Kunming · Changsha · Huizhou, China',
-      links: 'Links',
+      
       follow: 'Follow Us',
       copyright: '© 2026 MetaSounds. All rights reserved.',   
       support: {
@@ -61,6 +61,7 @@ export const translations = {
         description: 'MetaSounds is actively partnering with global distributors, agents and sales talents. We welcome inquiries for cooperation and distribution opportunities worldwide.',
       }
      links: {
+        title: 'Links',
         career: 'Careers',
         aboutus: 'About Us',
         policy: 'Privacy Policy',
@@ -119,7 +120,7 @@ export const translations = {
       email: 'contact@metasounds.net',
       phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: '日本 东京 | 中国 昆明 · 长沙 · 惠州',
-      links: '相关链接',
+      
       follow: '关注我们',
       copyright: '© 2026 MetaSounds. 保留所有权利。',   
       support: {
@@ -128,6 +129,7 @@ export const translations = {
         description: 'MetaSounds 正在积极寻求与全球分销商、代理商和销售人才的合作。诚挚欢迎世界各地的合作与分销咨询。',
       }    
      links: {
+       title: '相关链接',
        career: '职业发展',
        aboutus: '关于我们',
        policy: '隐私政策',
@@ -186,7 +188,7 @@ export const translations = {
       email: 'contact@metasounds.net',
       phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: '日本 東京都 | 中国 昆明市 · 長沙市 · 惠州市',
-      links: 'リンク',
+      
       follow: 'フォロー',
       copyright: '© 2026 MetaSounds. 全著作権所有。',
       support: {
@@ -195,6 +197,7 @@ export const translations = {
         description: 'MetaSoundsは、世界中のディストリビューター、代理店、営業人材とのパートナーシップを積極的に推進しています。世界各地での協業および流通に関するお問い合わせを歓迎いたします。',
       }  
       links: {
+        title: 'リンク',
         career: 'キャリア',
         aboutus: '会社概要',
         policy: 'プライバシーポリシー',
@@ -253,7 +256,7 @@ export const translations = {
       email: 'contact@metasounds.net',
       phone: '+81(JP)-080-3398-1211   +86(CN)-18908489758',
       address: '일본 도쿄 | 중국 쿤밍 · 창사 · 후이저우',
-      links: '링크',
+      
       follow: '팔로우',
       copyright: '© 2026 MetaSounds. 모든 권리 보유.',
       support: {
@@ -262,10 +265,11 @@ export const translations = {
         description: 'MetaSounds는 글로벌 유통업체, 대리점 및 영업 인재와의 파트너십을 적극적으로 추진하고 있습니다. 전 세계의 협업 및 유통 관련 문의를 환영합니다.',
       }   
       links: {
-    career: '커리어',
-    aboutus: '회사소개',
-    policy: '개인정보처리방침',
-}
+        title: '링크',
+        career: '커리어',
+        aboutus: '회사소개',
+        policy: '개인정보처리방침',
+      }
     },
   },
 };
