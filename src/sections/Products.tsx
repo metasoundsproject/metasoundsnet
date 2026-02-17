@@ -18,21 +18,21 @@ const products = [
     image: './oto-synthesizer.jpg',
     color: 'from-red-500/20 to-transparent',
     accent: 'bg-red-500',
-    link: 'https://www.redlabo.com/oto', // 添加链接
+    link: 'https://www.metasounds.net/synthesizer', // 添加链接
   },
   {
     id: 'midi',
     image: './bitvibe-midi.jpg',
     color: 'from-blue-500/20 to-transparent',
     accent: 'bg-blue-500',
-    link: 'https://www.bitvibe.jp/midi', // 添加链接
+    link: 'https://www.metasounds.net/midi', // 添加链接
   },
   {
     id: 'sound',
     image: './sound-system.jpg',
     color: 'from-purple-500/20 to-transparent',
     accent: 'bg-purple-500',
-    link: 'https://www.bitvibe.jp/sound-system', // 添加链接
+    link: 'https://www.metasounds.net/design', // 添加链接
   },
 ];
 
