@@ -59,13 +59,13 @@ export const translations = {
         title: 'support',
         badge: '1-Year Warranty · 30-Day Returns · Free Worldwide Shipping',
         description: 'MetaSounds is actively partnering with global distributors, agents and sales talents. We welcome inquiries for cooperation and distribution opportunities worldwide.',
-      }
-     links: {
+      },
+      links: {
         title: 'Links',
         career: 'Careers',
         aboutus: 'About Us',
         policy: 'Privacy Policy',
-    }
+      },
     },
 
   },
@@ -127,13 +127,13 @@ export const translations = {
         title: '售后支持',
         badge: '一年质保 · 30天无理由退换 · 全球免费配送',
         description: 'MetaSounds 正在积极寻求与全球分销商、代理商和销售人才的合作。诚挚欢迎世界各地的合作与分销咨询。',
-      }    
+      }, 
      links: {
        title: '相关链接',
        career: '职业发展',
        aboutus: '关于我们',
        policy: '隐私政策',
-     }
+     },
     },
 
   },
@@ -195,13 +195,13 @@ export const translations = {
         title: 'サポート',
         badge: '1年保証 · 30日間返品可能 · 世界中送料無料',
         description: 'MetaSoundsは、世界中のディストリビューター、代理店、営業人材とのパートナーシップを積極的に推進しています。世界各地での協業および流通に関するお問い合わせを歓迎いたします。',
-      }  
+      }  ,
       links: {
         title: 'リンク',
         career: 'キャリア',
         aboutus: '会社概要',
         policy: 'プライバシーポリシー',
-      }
+      },
     },
   
   },
@@ -263,13 +263,13 @@ export const translations = {
         title: '지원',
         badge: '1년 무상 보증 · 30일 무료 반품 · 전 세계 무료 배송',
         description: 'MetaSounds는 글로벌 유통업체, 대리점 및 영업 인재와의 파트너십을 적극적으로 추진하고 있습니다. 전 세계의 협업 및 유통 관련 문의를 환영합니다.',
-      }   
+      } ,  
       links: {
         title: '링크',
         career: '커리어',
         aboutus: '회사소개',
         policy: '개인정보처리방침',
-      }
+      },
     },
   },
 };
