@@ -62,11 +62,7 @@ export default function Hero() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const scrollToProducts = () => {
-    const element = document.getElementById('products');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+
   };
 
   return (
