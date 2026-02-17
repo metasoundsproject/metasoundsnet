@@ -59,24 +59,24 @@ export default function Footer() {
           {/* Links */}
           <div>
             <h4 className="font-mono text-sm text-white/40 tracking-widest uppercase mb-6">
-              {t.footer.links}
+              {t.footer.links.title}
             </h4>
             <ul className="space-y-3">
               <li>
                 <a href="/career.html" className="text-white/70 hover:text-white transition-colors link-underline">
-                  Careers
+                  {t.footer.links?.careers || 'Careers'}
                 </a>
               </li>
               
              
               <li>
                 <a href="/story.html" className="text-white/70 hover:text-white transition-colors link-underline">
-                  About Us
+                  {t.footer.links?.aboutus || 'About Us'}
                 </a>
               </li>
               <li>
                 <a href="/policy.html" className="text-white/70 hover:text-white transition-colors link-underline">
-                  Privacy Policy
+                  {t.footer.links?.policy || 'Privacy Policy'}
                 </a>
               </li>
             </ul>
