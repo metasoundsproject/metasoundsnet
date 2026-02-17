@@ -141,13 +141,13 @@ export default function Hero() {
             </p>
             
             <button
-              onClick={scrollToProducts}
-              className="hero-cta magnetic-btn inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full font-medium text-lg hover:bg-black/80 transition-colors group"
-              style={{ opacity: 0 }}
-            >
-              {t.hero.cta}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+  onClick={() => window.open('https://www.redlabo.com/oto', '_blank')}
+  className="hero-cta magnetic-btn inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full font-medium text-lg hover:bg-black/80 transition-colors group"
+  style={{ opacity: 0 }}
+>
+  {t.hero.cta}
+  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+</button>
           </div>
         </div>
       </div>
