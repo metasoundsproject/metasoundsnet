@@ -91,6 +91,12 @@ export default function Brands() {
           <div className="relative">
             {/* 外层容器：正方形，无 overflow-hidden，允许阴影和悬浮超出 */}
             <div className="aspect-square rounded-3xl flex items-center justify-center p-6">
+              <link 
+  href="https://www.redlabo.com" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="w-3/4 h-3/4 flex items-center justify-center"
+>
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
@@ -108,6 +114,7 @@ export default function Brands() {
                   mixBlendMode: 'multiply',
                 }}
               />
+   </link>
             </div>
             {/* Red accent */}
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-red-500 rounded-full opacity-20 blur-2xl" />
@@ -190,6 +197,13 @@ export default function Brands() {
           <div className="order-1 lg:order-2 relative">
             {/* 外层容器：正方形，无 overflow-hidden */}
             <div className="aspect-square rounded-3xl flex items-center justify-center p-6">
+             
+              <link 
+  href="https://www.bitvibe.jp" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="w-3/4 h-3/4 flex items-center justify-center"
+>
               <img
                 src="./bitvibelogo.png"
                 alt="BitVibe"
@@ -207,6 +221,7 @@ export default function Brands() {
                   mixBlendMode: 'multiply',
                 }}
               />
+  </link>
             </div>
             {/* Blue accent */}
             <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 blur-2xl" />
