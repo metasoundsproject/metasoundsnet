@@ -70,41 +70,39 @@ export default function Brands() {
         </div>
 
         {/* RED LABO */}
-        
         <div
-  ref={redLaboRef}
-  className="
-    relative
-    grid lg:grid-cols-2 gap-12 items-center mb-32
-    bg-gradient-to-t
-    from-gray-50
-    to-red-30/30
-    rounded-3xl
-    p-12
-    
-  "
-  style={{
-  opacity: 0,
-  background: 'linear-gradient(to top, rgba(255,0,0,0.025), #f9fafb)',
-  boxShadow: `
-    0 10px 30px rgba(0,0,0,0.04),
-    0 30px 80px rgba(0,0,0,0.06)
-  `,
-}}
->
-          
-
-          
+          ref={redLaboRef}
+          className="
+            relative
+            grid lg:grid-cols-2 gap-12 items-center mb-32
+            bg-gradient-to-t
+            from-gray-50
+            to-red-30/30
+            rounded-3xl
+            p-12
+          "
+          style={{
+            opacity: 0,
+            background: 'linear-gradient(to top, rgba(255,0,0,0.025), #f9fafb)',
+            boxShadow: `
+              0 10px 30px rgba(0,0,0,0.04),
+              0 30px 80px rgba(0,0,0,0.06)
+            `,
+          }}
+        >
           <div className="relative">
-           {/* <div className="aspect-square bg-gradient-to-br from-red-50 to-gray-100 rounded-3xl overflow-hidden"> */}
             <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
-              
               <img
                 src="./redlabologo.png"
                 alt="RED LABO"
-                className="w-3/4 h-3/4 object-cover"
+                className="w-3/4 h-3/4 object-cover 
+                  drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)]
+                  hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.25)]
+                  transition-all duration-500 ease-out
+                  hover:-translate-y-3 hover:scale-105
+                  cursor-pointer
+                "
               />
-             
             </div>
             {/* Red accent */}
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-red-500 rounded-full opacity-20 blur-2xl" />
@@ -139,25 +137,25 @@ export default function Brands() {
 
         {/* BitVibe */}
         <div
-  ref={bitVibeRef}
-  className="
-    relative
-    grid lg:grid-cols-2 gap-12 items-center
-    bg-gradient-to-t
-    from-gray-50
-    to-blue-50/60
-    rounded-3xl
-    p-12
-  "
-  style={{
-  opacity: 0,
-  background: 'linear-gradient(to top, rgba(59,130,246,0.05), #f9fafb)',
-  boxShadow: `
-    0 10px 30px rgba(0,0,0,0.04),
-    0 30px 80px rgba(0,0,0,0.06)
-  `,
-}}
->
+          ref={bitVibeRef}
+          className="
+            relative
+            grid lg:grid-cols-2 gap-12 items-center
+            bg-gradient-to-t
+            from-gray-50
+            to-blue-50/60
+            rounded-3xl
+            p-12
+          "
+          style={{
+            opacity: 0,
+            background: 'linear-gradient(to top, rgba(59,130,246,0.05), #f9fafb)',
+            boxShadow: `
+              0 10px 30px rgba(0,0,0,0.04),
+              0 30px 80px rgba(0,0,0,0.06)
+            `,
+          }}
+        >
           <div className="order-2 lg:order-1 lg:pr-8">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-3 h-3 bg-blue-500 rounded-full" />
@@ -185,15 +183,18 @@ export default function Brands() {
           </div>
           
           <div className="order-1 lg:order-2 relative">
-            {/*<div className="aspect-square bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl overflow-hidden"> */}
             <div className="aspect-square rounded-3xl overflow-hidden flex items-center justify-center">
-              
               <img
                 src="./bitvibelogo.png"
                 alt="BitVibe"
-                className="w-3/4 h-3/4 object-cover "
+                className="w-3/4 h-3/4 object-cover 
+                  drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)]
+                  hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.25)]
+                  transition-all duration-500 ease-out
+                  hover:-translate-y-3 hover:scale-105
+                  cursor-pointer
+                "
               />
-             
             </div>
             {/* Blue accent */}
             <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 blur-2xl" />
