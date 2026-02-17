@@ -8,6 +8,8 @@ export default function MusicPlayer() {
   const volumeRef = useRef(0.4);
   // 用于静音淡出（极快，但避免爆音）
   const muteTimerRef = useRef<number | null>(null);
+  // 记录暂停时的播放位置
+  const currentTimeRef = useRef(0);
 
   // 同步 ref 与 state
   useEffect(() => {
@@ -23,11 +25,12 @@ export default function MusicPlayer() {
     const audio = audioRef.current;
     if (!audio) return;
 
+    // 监听音频播放结束事件，实现循环播放
     const handleEnded = () => {
-      if (playingRef.current && !audio.paused) {
+      if (playingRef.current) {
         audio.currentTime = 0;
         audio.play().catch((err) => {
-          console.warn("自动播放失败：", err);
+          console.warn("循环播放失败：", err);
           playingRef.current = false;
           setPlaying(false);
         });
@@ -36,6 +39,7 @@ export default function MusicPlayer() {
 
     audio.addEventListener("ended", handleEnded);
     audio.volume = volume;
+    audio.loop = false; // 使用 ended 事件手动控制循环，更可靠
 
     if (playingRef.current) {
       audio.play().catch((err) => {
@@ -66,7 +70,8 @@ export default function MusicPlayer() {
     if (!audio) return;
 
     if (playingRef.current) {
-      // 暂停：先瞬间静音（避免爆音），再停止
+      // 暂停：记录当前播放位置，然后静音停止
+      currentTimeRef.current = audio.currentTime;
       playingRef.current = false;
       setPlaying(false);
       
@@ -75,10 +80,10 @@ export default function MusicPlayer() {
         clearInterval(muteTimerRef.current);
       }
       
-      // 极快淡出到0（10-20ms，人耳察觉不到延迟，但消除爆音）
+      // 极快淡出到0（避免爆音）
       const startVolume = audio.volume;
-      const steps = 3; // 3步完成静音
-      const stepDuration = 8; // 每步8ms，总共24ms
+      const steps = 3;
+      const stepDuration = 8;
       let currentStep = 0;
       
       muteTimerRef.current = setInterval(() => {
@@ -86,22 +91,21 @@ export default function MusicPlayer() {
         if (currentStep >= steps) {
           audio.volume = 0;
           audio.pause();
-          audio.currentTime = 0;
           clearInterval(muteTimerRef.current!);
           muteTimerRef.current = null;
           // 恢复音量设置（为下次播放准备）
           audio.volume = volumeRef.current;
         } else {
-          // 指数曲线下降更自然
           audio.volume = startVolume * Math.pow(1 - currentStep / steps, 2);
         }
       }, stepDuration);
       
     } else {
-      // 播放：立即开始
+      // 播放：从记录的位置继续播放
       playingRef.current = true;
       setPlaying(true);
       audio.volume = volumeRef.current;
+      audio.currentTime = currentTimeRef.current;
       audio.play().catch((err) => {
         console.warn("播放失败：", err);
         playingRef.current = false;
