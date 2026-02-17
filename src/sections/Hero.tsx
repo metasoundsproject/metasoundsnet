@@ -62,8 +62,7 @@ export default function Hero() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-
-  };
+  // 删除了未使用的 scrollToProducts 函数
 
   return (
     <section
@@ -107,14 +106,6 @@ export default function Hero() {
                 alt="OTO Synthesizer"
                 className="w-full max-w-lg mx-auto drop-shadow-2xl"
               />
-              
-              {/* Glow Effects 
-              <div className="absolute bottom-1/4 left-1/4 w-12 h-8 bg-red-500/30 blur-xl rounded-full animate-pulse-glow" />
-              <div className="absolute bottom-1/4 left-1/3 w-12 h-8 bg-blue-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.2s' }} />
-              <div className="absolute bottom-1/4 left-1/2 w-12 h-8 bg-yellow-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.4s' }} />
-              <div className="absolute bottom-1/4 right-1/3 w-12 h-8 bg-green-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.6s' }} />
-              <div className="absolute bottom-1/4 right-1/4 w-12 h-8 bg-purple-500/30 blur-xl rounded-full animate-pulse-glow" style={{ animationDelay: '0.8s' }} />
-              */}
             </div>
           </div>
 
@@ -137,27 +128,16 @@ export default function Hero() {
             </p>
             
             <button
-  onClick={() => window.open('https://www.redlabo.com/oto', '_blank')}
-  className="hero-cta magnetic-btn inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full font-medium text-lg hover:bg-black/80 transition-colors group"
-  style={{ opacity: 0 }}
->
-  {t.hero.cta}
-  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-</button>
+              onClick={() => window.open('https://www.redlabo.com/oto', '_blank')}
+              className="hero-cta magnetic-btn inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full font-medium text-lg hover:bg-black/80 transition-colors group"
+              style={{ opacity: 0 }}
+            >
+              {t.hero.cta}
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
           </div>
         </div>
       </div>
-
-      
-
-      {/* Scroll Indicator */}
-       {/* <div className="absolute bottom-8 right-6 lg:right-12">
-        <div className="flex flex-col items-center gap-2">
-          <div className="w-px h-12 bg-black/20 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1/2 bg-black animate-[slide-down_1.5s_ease-in-out_infinite]" />
-          </div>
-        </div>
-      </div>*/}
 
       <style>{`
         @keyframes slide-down {
