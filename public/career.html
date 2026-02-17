@@ -18,6 +18,12 @@
             color: #1d1d1f;
             line-height: 1.5;
             overflow-x: hidden;
+            /* 高级简约风淡灰色格子背景 */
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            background-attachment: fixed;
         }
 
         /* 悬浮返回栏 (苹果磨砂玻璃效果) */
@@ -27,7 +33,7 @@
             left: 0;
             right: 0;
             height: 56px;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.72);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             display: flex;
@@ -36,6 +42,11 @@
             z-index: 9999;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
             transition: all 0.3s cubic-bezier(0.28, 0.11, 0.32, 1);
+            /* 叠加格子纹理，保持视觉一致性 */
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
         }
 
         .floating-nav a {
@@ -96,17 +107,20 @@
         }
 
         .benefit-tag {
-            background-color: #e8e8ed;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
             color: #1d1d1f;
             padding: 8px 16px;
             border-radius: 999px;
             font-size: 14px;
             font-weight: 500;
-            transition: background-color 0.2s ease;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .benefit-tag:hover {
-            background-color: #d6d6d9;
+            background-color: rgba(255, 255, 255, 0.95);
+            transform: translateY(-2px);
         }
 
         /* 岗位卡片 (苹果官网卡片风格) */
@@ -117,18 +131,22 @@
         }
 
         .job-card {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
             opacity: 0;
             transform: translateY(30px);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+            border: 1px solid rgba(255, 255, 255, 0.6);
         }
 
         .job-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            background-color: rgba(255, 255, 255, 0.95);
         }
 
         /* 修复：为4个卡片都添加动画延迟 */
@@ -175,12 +193,16 @@
         .apply-section {
             text-align: center;
             padding: 40px 24px;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-radius: 20px;
             margin-bottom: 80px;
             opacity: 0;
             transform: translateY(20px);
             animation: fadeUp 0.8s 1.4s forwards;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
         }
 
         .apply-section h2 {
@@ -205,11 +227,12 @@
             font-size: 17px;
             font-weight: 500;
             cursor: pointer;
-            transition: background-color 0.2s ease;
+            transition: all 0.2s ease;
         }
 
         .apply-btn:hover {
             background-color: #0077ed;
+            transform: scale(1.05);
         }
 
         /* 页脚 */
@@ -218,7 +241,9 @@
             padding: 40px 24px;
             font-size: 12px;
             color: #86868b;
-            border-top: 1px solid #e8e8ed;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            background-color: rgba(245, 245, 247, 0.5);
+            backdrop-filter: blur(10px);
         }
 
         /* 通用动画 */
@@ -250,13 +275,17 @@
             .apply-section h2 {
                 font-size: 24px;
             }
+            
+            body {
+                background-size: 40px 40px;
+            }
         }
     </style>
 </head>
 <body>
     <!-- 悬浮返回栏 -->
     <div class="floating-nav">
-        <a href="https://metasounds.net" target="_blank">
+        <a href="https://metasounds.net " target="_blank">
             ← Back to MetaSounds
         </a>
     </div>
@@ -385,10 +414,10 @@
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('.floating-nav');
             if (window.scrollY > 50) {
-                nav.style.background = 'rgba(255, 255, 255, 0.9)';
+                nav.style.background = 'rgba(255, 255, 255, 0.85)';
                 nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.08)';
             } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.8)';
+                nav.style.background = 'rgba(255, 255, 255, 0.72)';
                 nav.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
             }
         });
