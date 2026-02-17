@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Links */}
           <div>
             <h4 className="font-mono text-sm text-white/40 tracking-widest uppercase mb-6">
-              {t.footer.links.title}
+              {t.footer.links?.title}
             </h4>
             <ul className="space-y-3">
               <li>
