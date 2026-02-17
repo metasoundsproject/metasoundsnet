@@ -62,7 +62,7 @@ export const translations = {
       },
       links: {
         title: 'Links',
-        career: 'Careers',
+        career: 'Open Jobs',
         aboutus: 'About Us',
         policy: 'Privacy Policy',
       },
@@ -130,7 +130,7 @@ export const translations = {
       }, 
      links: {
        title: '相关链接',
-       career: '职业发展',
+       career: '工作机会',
        aboutus: '关于我们',
        policy: '隐私政策',
      },
