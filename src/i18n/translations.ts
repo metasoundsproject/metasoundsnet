@@ -54,8 +54,14 @@ export const translations = {
       address: 'Tokyo, Japan | Kunming · Changsha · Huizhou, China',
       links: 'Links',
       follow: 'Follow Us',
-      copyright: '© 2026 MetaSounds. All rights reserved.',
+      copyright: '© 2026 MetaSounds. All rights reserved.',   
+      support: {
+        title: 'support',
+        badge: '1-Year Warranty · 30-Day Returns · Free Worldwide Shipping',
+        description: 'MetaSounds is actively partnering with global distributors, agents and sales talents. We welcome inquiries for cooperation and distribution opportunities worldwide.',
+      }
     },
+
   },
   zh: {
     nav: {
@@ -110,8 +116,14 @@ export const translations = {
       address: '日本 东京 | 中国 昆明 · 长沙 · 惠州',
       links: '相关链接',
       follow: '关注我们',
-      copyright: '© 2026 MetaSounds. 保留所有权利。',
+      copyright: '© 2026 MetaSounds. 保留所有权利。',   
+      support: {
+        title: '售后支持',
+        badge: '一年质保 · 30天无理由退换 · 全球免费配送',
+        description: 'MetaSounds 正在积极寻求与全球分销商、代理商和销售人才的合作。我们欢迎世界各地的合作与分销咨询。',
+      }    
     },
+
   },
   ja: {
     nav: {
@@ -167,7 +179,13 @@ export const translations = {
       links: 'リンク',
       follow: 'フォロー',
       copyright: '© 2026 MetaSounds. 全著作権所有。',
+      support: {
+        title: 'サポート',
+        badge: '1年保証 · 30日間返品可能 · 世界中送料無料',
+        description: 'MetaSoundsは、世界中のディストリビューター、代理店、営業人材とのパートナーシップを積極的に推進しています。世界各地での協業および流通に関するお問い合わせを歓迎いたします。',
+      }  
     },
+  
   },
   ko: {
     nav: {
@@ -223,6 +241,11 @@ export const translations = {
       links: '링크',
       follow: '팔로우',
       copyright: '© 2026 MetaSounds. 모든 권리 보유.',
+      support: {
+        title: '지원',
+        badge: '1년 무상 보증 · 30일 무료 반품 · 전 세계 무료 배송',
+        description: 'MetaSounds는 글로벌 유통업체, 대리점 및 영업 인재와의 파트너십을 적극적으로 추진하고 있습니다. 전 세계의 협업 및 유통 관련 문의를 환영합니다.',
+      }   
     },
   },
 };
