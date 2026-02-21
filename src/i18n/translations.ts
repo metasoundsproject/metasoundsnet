@@ -113,7 +113,7 @@ export const translations = {
     },
     philosophy: {
       title: '创意无界',
-      subtitle: '思以慧达，行以敏成',
+      subtitle: '思于慧达，行以敏成',
     },
     footer: {
       contact: '联系我们',
